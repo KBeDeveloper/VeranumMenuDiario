@@ -1,0 +1,2 @@
+# VeranumMenuDiario
+Módulo Menu Diario
