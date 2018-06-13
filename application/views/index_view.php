@@ -609,7 +609,7 @@
 <!--===============================================================================================-->
 	<script type="text/javascript" src="<?= base_url();?>assets/vendor/lightbox2/js/lightbox.min.js"></script>
 <!--===============================================================================================-->
-	<script src="js/main.js"></script>
+	<script src="<?=base_url();?>assets/js/main.js"></script>
 
 </body>
 </html>
