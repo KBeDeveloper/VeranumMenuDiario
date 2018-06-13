@@ -543,13 +543,7 @@
 							21 Dic 2017
 						</span>
 					</div>
-				</div>
-
-				
-		
-
-					
-				</div>
+				</div>				
 			</div>
 		</div>
 	</footer>
