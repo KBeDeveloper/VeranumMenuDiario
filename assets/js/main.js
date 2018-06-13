@@ -149,7 +149,6 @@
         $(ovlSideBar).removeClass('show-overlay-sidebar');
     })
 
-
     /*[ Isotope ]
     ===========================================================*/
     var $topeContainer = $('.isotope-grid');
