@@ -25,8 +25,8 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/noui/nouislider.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/util_insumo.css">
+	<link rel="stylesheet" type="text/css" href="css/insumo.css">
 <!--===============================================================================================-->
 </head>
 <body>
@@ -192,7 +192,7 @@
 	    });
 	</script>
 <!--===============================================================================================-->
-	<script src="js/main.js"></script>
+	<script src="js/main_insumos.js"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
