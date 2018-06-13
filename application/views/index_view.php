@@ -42,7 +42,7 @@
 					<!-- Logo -->
 					<div class="logo">
 						<a href="<?= base_url();?>assets/index_view.php">
-							<img src="images/icons/Menulogo.png" alt="IMG-LOGO" data-logofixed="images/icons/Menulogo.png">
+							<img src="<?=base_url();?>assets/images/icons/Menulogo.png" alt="IMG-LOGO" data-logofixed="<?=base_url();?>assets/images/icons/Menulogo.png">
 						</a>
 					</div>
 
@@ -70,9 +70,7 @@
 					<div class="social flex-w flex-l-m p-r-20">
 						<a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
 						<a href="#"><i class="fa fa-facebook m-l-21" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-twitter m-l-21" aria-hidden="true"></i></a>
-
-				
+						<a href="#"><i class="fa fa-twitter m-l-21" aria-hidden="true"></i></a>				
 					</div>
 				</div>
 			</div>
