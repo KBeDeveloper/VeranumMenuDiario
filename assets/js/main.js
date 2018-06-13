@@ -115,7 +115,6 @@
     var linkLogo1 = $(logo).attr('src');
     var linkLogo2 = $(logo).data('logofixed');
 
-
     $(window).on('scroll',function(){
         if($(this).scrollTop() > 5 && $(this).width() > 992) {
             $(logo).attr('src',linkLogo2);
