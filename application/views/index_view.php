@@ -5,16 +5,30 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="<?= base_url();?>assets/images/icons/logopagina.png"/>
+	<link rel="icon" type="image/png" href="images/icons/logopagina.png"/>
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/fonts/themify/themify-icons.css">
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/vendor/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/vendor/lightbox2/css/lightbox.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/themify/themify-icons.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/css/util.css">
-	<link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/css/main.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/lightbox2/css/lightbox.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 </head>
 <body class="animsition">
@@ -27,8 +41,8 @@
 				<div class="wrap_header trans-0-3">
 					<!-- Logo -->
 					<div class="logo">
-						<a href="<?= base_url();?>assets/index_view.php">
-							<img src="<?=base_url();?>assets/images/icons/Menulogo.png" alt="IMG-LOGO" data-logofixed="<?=base_url();?>assets/images/icons/Menulogo.png">
+						<a href="index.html">
+							<img src="images/icons/Menulogo.png" alt="IMG-LOGO" data-logofixed="images/icons/Menulogo.png">
 						</a>
 					</div>
 
@@ -37,15 +51,15 @@
 						<nav class="menu">
 							<ul class="main_menu">
 								<li>
-									<a href="<?= base_url();?>assets/index_view.php">Pagina Principal</a>
+									<a href="index.html">Pagina Principal</a>
 								</li>
 
 								<li>
-									<a href="<?= base_url();?>assets/menu_view.php">Menu</a>
+									<a href="menu.html">Menu</a>
 								</li>
 
 								<li>
-									<a href="<?= base_url();?>assets/reservation_view.php">Reservaciones</a>
+									<a href="reservation.html">Reservaciones</a>
 								</li>
 								
 							</ul>
@@ -56,7 +70,9 @@
 					<div class="social flex-w flex-l-m p-r-20">
 						<a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
 						<a href="#"><i class="fa fa-facebook m-l-21" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-twitter m-l-21" aria-hidden="true"></i></a>				
+						<a href="#"><i class="fa fa-twitter m-l-21" aria-hidden="true"></i></a>
+
+				
 					</div>
 				</div>
 			</div>
@@ -82,7 +98,7 @@
 
 						<div class="wrap-btn-slide1 animated visible-false" data-appear="rotateIn">
 							<!-- Button1 -->
-							<a href="<?= base_url();?>assets/menu_view.php" class="btn1 flex-c-m size1 txt3 trans-0-4">
+							<a href="menu.html" class="btn1 flex-c-m size1 txt3 trans-0-4">
 								Ver Menu
 							</a>
 						</div>
@@ -108,7 +124,7 @@
 						<!-- Block1 -->
 						<div class="blo1">
 							<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
-								<a href="#"><img src="<?= base_url();?>assets/images/Restaurant Romantico.jpg" alt="IMG-INTRO"></a>
+								<a href="#"><img src="images/Restaurant Romantico.jpg" alt="IMG-INTRO"></a>
 							</div>
 
 							<div class="wrap-text-blo1 p-t-35">
@@ -132,7 +148,7 @@
 						<!-- Block1 -->
 						<div class="blo1">
 							<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
-								<a href="#"><img src="<?= base_url();?>assets/images/comidadeliciosa.jpg" alt="IMG-INTRO"></a>
+								<a href="#"><img src="images/comidadeliciosa.jpg" alt="IMG-INTRO"></a>
 							</div>
 
 							<div class="wrap-text-blo1 p-t-35">
@@ -156,7 +172,7 @@
 						<!-- Block1 -->
 						<div class="blo1">
 							<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
-								<a href="#"><img src="<?= base_url();?>assets/images/VinoElegante.jpg" alt="IMG-INTRO"></a>
+								<a href="#"><img src="images/VinoElegante.jpg" alt="IMG-INTRO"></a>
 							</div>
 
 							<div class="wrap-text-blo1 p-t-35">
@@ -200,7 +216,7 @@
 						<div class="col-sm-6">
 							<!-- Item our menu -->
 							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
-								<img src="<?= base_url();?>assets/images/DesayunoPrincipal.jpg" alt="IMG-MENU">
+								<img src="images/DesayunoPrincipal.jpg" alt="IMG-MENU">
 
 								<!-- Button2 -->
 								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size4">
@@ -212,7 +228,7 @@
 						<div class="col-sm-6">
 							<!-- Item our menu -->
 							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
-								<img src="<?= base_url();?>assets/images/AlmuerzoPrincipal.jpg" alt="IMG-MENU">
+								<img src="images/AlmuerzoPrincipal.jpg" alt="IMG-MENU">
 
 								<!-- Button2 -->
 								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size5">
@@ -224,7 +240,7 @@
 						<div class="col-12">
 							<!-- Item our menu -->
 							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
-								<img src="<?= base_url();?>assets/images/CenaPrincipal.jpg" alt="IMG-MENU">
+								<img src="images/CenaPrincipal.jpg" alt="IMG-MENU">
 
 								<!-- Button2 -->
 								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size6">
@@ -240,24 +256,11 @@
 						<div class="col-12">
 							<!-- Item our menu -->
 							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
-								<img src="<?= base_url();?>assets/images/OncePrincipal.jpg" alt="IMG-MENU">
+								<img src="images/OncePrincipal.jpg" alt="IMG-MENU">
 
 								<!-- Button2 -->
 								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size7">
 									once
-								</a>
-							</div>
-						</div>
-
-
-						<div class="col-12">
-							<!-- Item our menu -->
-							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
-								<img src="<?= base_url();?>assets/images/PostrePrincipal.jpg" alt="IMG-MENU">
-
-								<!-- Button2 -->
-								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size9">
-									Agregado de postres
 								</a>
 							</div>
 						</div>
@@ -391,7 +394,7 @@
 
 				<div class="col-lg-6 p-b-30 p-t-18">
 					<div class="wrap-pic-booking size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-						<img src="<?= base_url();?>assets/images/ReservacionLibro.jpg" alt="IMG-OUR">
+						<img src="images/ReservacionLibro.jpg" alt="IMG-OUR">
 					</div>
 				</div>
 			</div>
@@ -413,7 +416,7 @@
 				Nuestro Video
 			</h3>
 
-			<div class="btn-play ab-center size16 hov-pointer m-l-r-auto m-t-43 m-b-33" data-toggle="#modal-video-01">
+			<div class="btn-play ab-center size16 hov-pointer m-l-r-auto m-t-43 m-b-33" data-toggle="modal" data-target="#modal-video-01">
 				<div class="flex-c-m sizefull bo-cir bgwhite color1 hov1 trans-0-4">
 					<i class="fa fa-play fs-18 m-l-2" aria-hidden="true"></i>
 				</div>
@@ -421,24 +424,6 @@
 		</div>
 	</section>
 	<!-- Sign up -->
-	<div class="section-signup bg1-pattern p-t-85 p-b-85">
-		<form class="flex-c-m flex-w flex-col-c-m-lg p-l-5 p-r-5">
-			<span class="txt5 m-10">
-				Consultas
-			</span>
-
-			<div class="wrap-input-signup size17 bo2 bo-rad-10 bgwhite pos-relative txt10 m-10">
-				<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="email" placeholder="Email">
-				<i class="fa fa-envelope ab-r-m m-r-18" aria-hidden="true"></i>
-			</div>
-
-			<!-- Button3 -->
-			<button type="submit" class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">
-				Enviar 
-			</button>
-		</form>
-	</div>
-
 
 	<footer class="bg1">
 		<div class="container p-t-40 p-b-70">
@@ -529,7 +514,13 @@
 							21 Dic 2017
 						</span>
 					</div>
-				</div>				
+				</div>
+
+				
+		
+
+					
+				</div>
 			</div>
 		</div>
 	</footer>
@@ -552,7 +543,7 @@
 			<div class="close-mo-video-01 trans-0-4" data-dismiss="modal" aria-label="Close">&times;</div>
 
 			<div class="wrap-video-mo-01">
-				<div class="w-full wrap-pic-w op-0-0"><img src="<?= base_url();?>assets/images/icons/video-16-9.jpg" alt="IMG"></div>
+				<div class="w-full wrap-pic-w op-0-0"><img src="images/icons/video-16-9.jpg" alt="IMG"></div>
 				<div class="video-mo-01">
 					<iframe src="https://www.youtube.com/embed/5k1hSu2gdKE?rel=0&amp;showinfo=0" allowfullscreen></iframe>
 				</div>
@@ -560,18 +551,34 @@
 		</div>
 	</div>
 
+
+
 <!--===============================================================================================-->
-	<script type="text/javascript" src="<?= base_url();?>assets/vendor/slick/slick.min.js"></script>
-	<script type="text/javascript" src="<?= base_url();?>assets/js/slick-custom.js"></script>
+	<script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
-	<script type="text/javascript" src="<?= base_url();?>assets/vendor/parallax100/parallax100.js"></script>
+	<script type="text/javascript" src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/bootstrap/js/popper.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/daterangepicker/moment.min.js"></script>
+	<script type="text/javascript" src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+	<script type="text/javascript" src="js/slick-custom.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/parallax100/parallax100.js"></script>
 	<script type="text/javascript">
         $('.parallax100').parallax100();
 	</script>
 <!--===============================================================================================-->
-	<script type="text/javascript" src="<?= base_url();?>assets/vendor/lightbox2/js/lightbox.min.js"></script>
+	<script type="text/javascript" src="vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
-	<script src="<?=base_url();?>assets/js/main.js"></script>
+	<script type="text/javascript" src="vendor/lightbox2/js/lightbox.min.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
 
 </body>
 </html>
