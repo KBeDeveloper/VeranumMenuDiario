@@ -5,14 +5,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+	<link rel="icon" type="image/png" href="<?= base_url();?>assets/images/icons/favicon.ico"/>
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/fonts/iconic/css/material-design-iconic-font.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/noui/nouislider.min.css">
+	<link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/vendor/noui/nouislider.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util_insumo.css">
-	<link rel="stylesheet" type="text/css" href="css/insumo.css">
+	<link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/css/util_insumo.css">
+	<link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/css/insumo.css">
 <!--===============================================================================================-->
 </head>
 <body>
@@ -139,9 +139,9 @@
 		})
 	</script>
 <!--===============================================================================================-->
-	<script src="vendor/countdowntime/countdowntime.js"></script>
+	<script src="<?= base_url();?>assets/vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
-	<script src="vendor/noui/nouislider.min.js"></script>
+	<script src="<?= base_url();?>assets/vendor/noui/nouislider.min.js"></script>
 	<script>
 	    var filterBar = document.getElementById('filter-bar');
 
@@ -166,7 +166,7 @@
 	    });
 	</script>
 <!--===============================================================================================-->
-	<script src="js/main_insumos.js"></script>
+	<script src="<?= base_url();?>assets/js/main_insumos.js"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
