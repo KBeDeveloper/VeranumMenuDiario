@@ -42,7 +42,7 @@
 
 				<div class="wrap-input100 input100-select bg1">
 					<span class="label-input100">Insumos a pedir *</span>
-					<div>
+					<div class="dropDownSelect2">
 						<select class="js-select2" name="service">
 							<option>Opciones</option>
 							<option>Verduras</option>
@@ -53,7 +53,6 @@
 							<option>bebestibles</option>
 							<option>otros</option>
 						</select>
-						<div class="dropDownSelect2"></div>
 					</div>
 				</div>
 
