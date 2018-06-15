@@ -7,16 +7,30 @@
 <!--===============================================================================================-->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 <!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="<?= base_url()?>assets/images/icons/logopagina.png"/>
+	<link rel="icon" type="image/png" href="images/icons/logopagina.png"/>
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?= base_url()?>assets/fonts/themify/themify-icons.css">
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?= base_url()?>assets/vendor/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?= base_url()?>assets/vendor/lightbox2/css/lightbox.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/themify/themify-icons.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?= base_url()?>assets/css/util.css">
-	<link rel="stylesheet" type="text/css" href="<?= base_url()?>assets/css/main.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/lightbox2/css/lightbox.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 </head>
 <body class="animsition">
@@ -29,7 +43,7 @@
 				<div class="wrap_header trans-0-3">
 					<!-- Logo -->
 					<div class="logo">
-						<a href="<?= base_url()?>index_view.php">
+						<a href="index.html">
 							<img src="images/icons/Menulogo.png" alt="IMG-LOGO" data-logofixed="images/icons/Menulogo.png">
 						</a>
 					</div>
@@ -39,15 +53,15 @@
 						<nav class="menu">
 							<ul class="main_menu">
 								<li>
-									<a href="<?= base_url()?>index_view.php">Pagina principal</a>
+									<a href="index.html">Pagina principal</a>
 								</li>
 
 								<li>
-									<a href="<?= base_url()?>menu_view.php">Menu</a>
+									<a href="menu.html">Menu</a>
 								</li>
 
 								<li>
-									<a href="<?= base_url()?>reservation_view.php">Reservacion</a>
+									<a href="reservation.html">Reservacion</a>
 								</li>
 
 							</ul>
@@ -299,7 +313,8 @@
 							Activello es una buena opción. Tiene un control 
 							deslizante integrado que muestra la imagen mostrada 
 							en el control deslizante.
-							<a href="#" https://buff.ly/2zaSfAQ
+							<a href="#" class="txt15">
+								https://buff.ly/2zaSfAQ
 							</a>
 						</p>
 
@@ -318,7 +333,8 @@
 
 						<p class="txt14 m-b-18">
 							Activello es una buena opción. Tiene un control deslizante integrado que muestra
-							<a href="#" https://buff.ly/2zaSfAQ
+							<a href="#" class="txt15">
+								https://buff.ly/2zaSfAQ
 							</a>
 						</p>
 
@@ -350,19 +366,32 @@
 
 
 
-
 <!--===============================================================================================-->
-	<script type="text/javascript" src="<?= base_url()?>assets/vendor/slick/slick.min.js"></script>
-	<script type="text/javascript" src="<?= base_url()?>assets/js/slick-custom.js"></script>
+	<script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
-	<script type="text/javascript" src="<?= base_url()?>assets/vendor/parallax100/parallax100.js"></script>
+	<script type="text/javascript" src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/bootstrap/js/popper.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/daterangepicker/moment.min.js"></script>
+	<script type="text/javascript" src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+	<script type="text/javascript" src="js/slick-custom.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/parallax100/parallax100.js"></script>
 	<script type="text/javascript">
         $('.parallax100').parallax100();
 	</script>
 <!--===============================================================================================-->
-	<script type="text/javascript" src="<?= base_url()?>assets/vendor/lightbox2/js/lightbox.min.js"></script>
+	<script type="text/javascript" src="vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
-	<script src="<?= base_url()?>assets/js/main.js"></script>
+	<script type="text/javascript" src="vendor/lightbox2/js/lightbox.min.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
 
 </body>
 </html>
