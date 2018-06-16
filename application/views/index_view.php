@@ -341,7 +341,6 @@
 
 								<div class="wrap-inputpeople size12 bo2 bo-rad-10 m-t-3 m-b-23">
 									<!-- Select2 -->
-<<<<<<< HEAD
 									<select class="selection-1" name="select-commensals">
 										<option value="1 personas">1 persona</option>
 										<option value="2 personas">2  personas</option>
@@ -355,21 +354,6 @@
 										<option value="10 personas">10  personas</option>
 										<option value="11 personas">11  personas</option>
 										<option value="12 personas">12  personas</option>
-=======
-									<select class="selection-1" name="select-people">
-										<option value="1">1 persona</option>
-										<option value="2">2  personas</option>
-										<option value="3">3  personas</option>
-										<option value="4">4  personas</option>
-										<option value="5">5  personas</option>
-										<option value="6">6  personas</option>
-										<option value="7">7  personas</option>
-										<option value="8">8  personas</option>
-										<option value="9">9  personas</option>
-										<option value="10">10  personas</option>
-										<option value="11">11  personas</option>
-										<option value="12">12  personas</option>
->>>>>>> 4387e7c43eaa740cc24c3d8f56086cb3f2544732
 									</select>
 								</div>
 								
