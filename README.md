@@ -14,3 +14,4 @@ June 13, 2018 - 08:56 PM: Se ha añadido el archivo main_helper.php al directori
 June 14, 2018 - 10:05 PM: Se han reinsertado vistas actualizadas de origen externo.
 June 14, 2018 - 11:40 PM: Se ha añadido el script preliminar de la base de datos.
 June 16, 2018 - 11:20 AM: Se ha añadido el archivo User_model.php al directorio 'application/models'.
+June 16, 2018 - 14:17 PM: Se añadieron los controladores 'Menu_controller' y 'Order_controller'
