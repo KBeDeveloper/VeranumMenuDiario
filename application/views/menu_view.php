@@ -43,7 +43,7 @@
 				<div class="wrap_header trans-0-3">
 					<!-- Logo -->
 					<div class="logo">
-						<a href="index.html">
+						<a href="/index.php/Welcome">
 							<img src="images/icons/Menulogo.png" alt="IMG-LOGO" data-logofixed="images/icons/Menulogo.png">
 						</a>
 					</div>
@@ -53,15 +53,15 @@
 						<nav class="menu">
 							<ul class="main_menu">
 								<li>
-									<a href="index.html">Pagina principal</a>
+									<a href="/index.php/Welcome">Pagina principal</a>
 								</li>
 
 								<li>
-									<a href="menu.html">Menu</a>
+									<a href="/index.php/Menu_controller">Menu</a>
 								</li>
 
 								<li>
-									<a href="reservation.html">Reservaciones</a>
+									<a href="/index.php/Order_controller">Reservaciones</a>
 								</li>
 
 								
