@@ -351,6 +351,13 @@
 										<option>12  personas</option>
 									</select>
 								</div>
+								<!-- run  -->
+								<span class="txt9">
+									Run
+								</span>
+								<div class="wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23">
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="email" placeholder="Email">
+								</div>
 							</div>
 
 							<div class="col-md-6">
@@ -376,10 +383,28 @@
 								<span class="txt9">
 									Email
 								</span>
-
 								<div class="wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23">
 									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="email" placeholder="Email">
 								</div>
+								<!-- dv   -->
+								<span class="txt9">
+									dv
+								</span>
+								<div class="wrap-inputpeople size12 bo2 bo-rad-10 m-t-3 m-b-23">
+									<!-- Select3 -->
+									<select class="selection-1" name="people">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+										<option>6</option>
+										<option>7</option>
+										<option>8</option>
+										<option>9</option>
+										<option>k</option>										
+									</select>
+								</div>								
 							</div>
 						</div>
 
