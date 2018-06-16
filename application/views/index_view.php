@@ -41,7 +41,7 @@
 				<div class="wrap_header trans-0-3">
 					<!-- Logo -->
 					<div class="logo">
-						<a href="index.html">
+						<a href="/index.php/Welcome">
 							<img src="<?=base_url();?>assets/images/icons/Menulogo.png" alt="IMG-LOGO" data-logofixed="<?=base_url();?>assets/images/icons/Menulogo.png">
 						</a>
 					</div>
