@@ -109,7 +109,7 @@
 							<div class="col-md-4">
 								<!-- Date -->
 								<span class="txt9">
-									fecha
+									Fecha
 								</span>
 
 								<div class="wrap-inputdate pos-relative txt10 size12 bo2 bo-rad-10 m-t-3 m-b-23">
@@ -121,12 +121,12 @@
 							<div class="col-md-4">
 								<!-- Time -->
 								<span class="txt9">
-									hora
+									Hora
 								</span>
 
 								<div class="wrap-inputtime size12 bo2 bo-rad-10 m-t-3 m-b-23">
 									<!-- Select2 -->
-									<select class="selection-1" name="select-time">
+									<select class="selection-1" name="select-hour">
 									    <option value="9:00">9:00</option>
 										<option value="9:30">9:30</option>
 										<option value="10:00">10:00</option>
@@ -153,13 +153,12 @@
 							<div class="col-md-4">
 								<!-- People -->
 								<span class="txt9">
-									numero de personas
+									Numero de Personas
 								</span>
 
 								<div class="wrap-inputpeople size12 bo2 bo-rad-10 m-t-3 m-b-23">
 									<!-- Select2 -->
 									<select class="selection-1" name="select-people">
-									<option value="1 personas">1 persona</option>
 										<option value="1">1 persona</option>
 										<option value="2">2  personas</option>
 										<option value="3">3  personas</option>
@@ -192,7 +191,7 @@
 							<div class="col-md-4">
 								<!-- Phone -->
 								<span class="txt9">
-									numero de telefono
+									Numero de Telefono
 								</span>
 
 								<div class="wrap-inputphone size12 bo2 bo-rad-10 m-t-3 m-b-23">
