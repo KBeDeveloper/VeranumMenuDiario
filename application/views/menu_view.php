@@ -794,7 +794,7 @@
 	<script type="text/javascript" src="<?= base_url();?>assets/vendor/daterangepicker/daterangepicker.js"></script>
 <!--===============================================================================================-->
 	<script type="text/javascript" src="<?= base_url();?>assets/vendor/slick/slick.min.js"></script>
-	<script type="text/javascript" src="js/slick-custom.js"></script>
+	<script type="text/javascript" src="<?= base_url();?>assets/js/slick-custom.js"></script>
 <!--===============================================================================================-->
 	<script type="text/javascript" src="<?= base_url();?>assets/vendor/parallax100/parallax100.js"></script>
 	<script type="text/javascript">
