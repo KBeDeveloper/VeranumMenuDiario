@@ -7,25 +7,25 @@
 <!--===============================================================================================-->
 	<link rel="icon" type="image/png" href="<?= base_url();?>assets/images/icons/logopagina.png"/>
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/vendor/bootstrap/css/bootstrap.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/fonts/font-awesome-4.7.0/css/font-awesome.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/fonts/themify/themify-icons.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/vendor/animate/animate.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/vendor/css-hamburgers/hamburgers.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/vendor/animsition/css/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/vendor/animsition/css/animsition.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/vendor/select2/select2.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/vendor/daterangepicker/daterangepicker.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/vendor/slick/slick.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/vendor/lightbox2/css/lightbox.min.css">
+	<link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/vendor/lightbox2/css/lightbox.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/css/util.css">
 	<link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/css/main.css">
@@ -124,7 +124,7 @@
 						<!-- Block1 -->
 						<div class="blo1">
 							<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
-								<a href="#"><img src="images/Restaurant Romantico.jpg" alt="IMG-INTRO"></a>
+								<a href="#"><img src="<?=base_url();?>assets/images/Restaurant Romantico.jpg" alt="IMG-INTRO"></a>
 							</div>
 
 							<div class="wrap-text-blo1 p-t-35">
@@ -148,7 +148,7 @@
 						<!-- Block1 -->
 						<div class="blo1">
 							<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
-								<a href="#"><img src="images/comidadeliciosa.jpg" alt="IMG-INTRO"></a>
+								<a href="#"><img src="<?=base_url();?>assets/images/comidadeliciosa.jpg" alt="IMG-INTRO"></a>
 							</div>
 
 							<div class="wrap-text-blo1 p-t-35">
@@ -172,7 +172,7 @@
 						<!-- Block1 -->
 						<div class="blo1">
 							<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
-								<a href="#"><img src="images/VinoElegante.jpg" alt="IMG-INTRO"></a>
+								<a href="#"><img src="<?=base_url();?>assets/images/VinoElegante.jpg" alt="IMG-INTRO"></a>
 							</div>
 
 							<div class="wrap-text-blo1 p-t-35">
@@ -216,7 +216,7 @@
 						<div class="col-sm-6">
 							<!-- Item our menu -->
 							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
-								<img src="images/DesayunoPrincipal.jpg" alt="IMG-MENU">
+								<img src="<?=base_url();?>assets/images/DesayunoPrincipal.jpg" alt="IMG-MENU">
 
 								<!-- Button2 -->
 								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size4">
@@ -228,7 +228,7 @@
 						<div class="col-sm-6">
 							<!-- Item our menu -->
 							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
-								<img src="images/AlmuerzoPrincipal.jpg" alt="IMG-MENU">
+								<img src="<?=base_url();?>assets/images/AlmuerzoPrincipal.jpg" alt="IMG-MENU">
 
 								<!-- Button2 -->
 								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size5">
@@ -240,7 +240,7 @@
 						<div class="col-12">
 							<!-- Item our menu -->
 							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
-								<img src="images/CenaPrincipal.jpg" alt="IMG-MENU">
+								<img src="<?=base_url();?>assets/images/CenaPrincipal.jpg" alt="IMG-MENU">
 
 								<!-- Button2 -->
 								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size6">
@@ -256,7 +256,7 @@
 						<div class="col-12">
 							<!-- Item our menu -->
 							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
-								<img src="images/OncePrincipal.jpg" alt="IMG-MENU">
+								<img src="<?=base_url();?>assets/images/OncePrincipal.jpg" alt="IMG-MENU">
 
 								<!-- Button2 -->
 								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size7">
@@ -394,7 +394,7 @@
 
 				<div class="col-lg-6 p-b-30 p-t-18">
 					<div class="wrap-pic-booking size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-						<img src="images/ReservacionLibro.jpg" alt="IMG-OUR">
+						<img src="<?=base_url();?>assets/images/ReservacionLibro.jpg" alt="IMG-OUR">
 					</div>
 				</div>
 			</div>
@@ -406,7 +406,7 @@
 
 
 	<!-- Video -->
-	<section class="section-video parallax100" style="background-image: url(images/VideoFondo.jpg);">
+	<section class="section-video parallax100" style="background-image: url(<?=base_url();?>assets/images/VideoFondo.jpg);">
 		<div class="content-video t-center p-t-225 p-b-250">
 			<span class="tit2 p-l-15 p-r-15">
 				Echa un vistazo a
@@ -543,7 +543,7 @@
 			<div class="close-mo-video-01 trans-0-4" data-dismiss="modal" aria-label="Close">&times;</div>
 
 			<div class="wrap-video-mo-01">
-				<div class="w-full wrap-pic-w op-0-0"><img src="images/icons/video-16-9.jpg" alt="IMG"></div>
+				<div class="w-full wrap-pic-w op-0-0"><img src="<?=base_url();?>assets/images/icons/video-16-9.jpg" alt="IMG"></div>
 				<div class="video-mo-01">
 					<iframe src="https://www.youtube.com/embed/5k1hSu2gdKE?rel=0&amp;showinfo=0" allowfullscreen></iframe>
 				</div>

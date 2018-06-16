@@ -17,9 +17,12 @@ class Welcome extends CI_Controller {
 	 * So any other public methods not prefixed with an underscore will
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
-	 */
+	 */	
 	public function index()
 	{
+		header('Access-Control-Allow-Origin: http://127.0.0.1/');
+		header('Access-Control-Allow-Origin: htpp://localhost/');
+		header('Access-Control-Allow-Credentials: true');
 		$this->load->view('index_view');
 	}
 }
