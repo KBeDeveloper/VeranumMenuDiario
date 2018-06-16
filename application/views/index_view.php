@@ -289,14 +289,14 @@
 							<div class="col-md-6">
 								<!-- run  -->
 								<span class="txt9">
-									Run
+									RUN
 								</span>
 								<div class="wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23">
 									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-run" placeholder="run">
 								</div>
 								<!-- Date -->
 								<span class="txt9">
-									Date
+									Fecha
 								</span>
 
 								<div class="wrap-inputdate pos-relative txt10 size12 bo2 bo-rad-10 m-t-3 m-b-23">
@@ -306,12 +306,12 @@
 
 								<!-- Time -->
 								<span class="txt9">
-									Time
+									Hora
 								</span>
 
 								<div class="wrap-inputtime size12 bo2 bo-rad-10 m-t-3 m-b-23">
 									<!-- Select2 -->
-									<select class="selection-1" name="select-time">
+									<select class="selection-1" name="select-hour">
 										<option value="9:00">9:00</option>
 										<option value="9:30">9:30</option>
 										<option value="10:00">10:00</option>
@@ -342,18 +342,18 @@
 								<div class="wrap-inputpeople size12 bo2 bo-rad-10 m-t-3 m-b-23">
 									<!-- Select2 -->
 									<select class="selection-1" name="select-commensals">
-										<option value="1 personas">1 persona</option>
-										<option value="2 personas">2  personas</option>
-										<option value="3 personas">3  personas</option>
-										<option value="4 personas">4  personas</option>
-										<option value="5 personas">5  personas</option>
-										<option value="6 personas">6  personas</option>
-										<option value="7 personas">7  personas</option>
-										<option value="8 personas">8  personas</option>
-										<option value="9 personas">9  personas</option>
-										<option value="10 personas">10  personas</option>
-										<option value="11 personas">11  personas</option>
-										<option value="12 personas">12  personas</option>
+										<option value="1">1 persona</option>
+										<option value="2">2  personas</option>
+										<option value="3">3  personas</option>
+										<option value="4">4  personas</option>
+										<option value="5">5  personas</option>
+										<option value="6">6  personas</option>
+										<option value="7">7  personas</option>
+										<option value="8">8  personas</option>
+										<option value="9">9  personas</option>
+										<option value="10">10  personas</option>
+										<option value="11">11  personas</option>
+										<option value="12">12  personas</option>
 									</select>
 								</div>
 								
@@ -362,11 +362,11 @@
 							<div class="col-md-6">
 								<!-- dv   -->
 								<span class="txt9">
-									dv
+									DV
 								</span>
 								<div class="wrap-inputpeople size12 bo2 bo-rad-10 m-t-3 m-b-23">
 									<!-- Select3 -->
-									<select class="selection-1" name="slect-dv">
+									<select class="selection-1" name="select-dv">
 										<option selected value="1">1</option>
 										<option value="2">2</option>
 										<option value="3">3</option>
@@ -399,7 +399,7 @@
 
 								<!-- Email -->
 								<span class="txt9">
-									Email
+									Correo electrónico
 								</span>
 								<div class="wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23">
 									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-email" placeholder="Email">
