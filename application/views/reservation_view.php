@@ -44,7 +44,7 @@
 					<!-- Logo -->
 					<div class="logo">
 						<a href="/index.php/Welcome">
-							<img src="images/icons/Menulogo.png" alt="IMG-LOGO" data-logofixed="images/icons/Menulogo.png">
+							<img src="<?= base_url();?>assets/images/icons/Menulogo.png" alt="IMG-LOGO" data-logofixed="<?= base_url();?>assets/images/icons/Menulogo.png">
 						</a>
 					</div>
 
@@ -82,7 +82,7 @@
 	<!-- Sidebar -->
 
 	<!-- Title Page -->
-	<section class="bg-title-page flex-c-m p-t-160 p-b-80 p-l-15 p-r-15" style="background-image: url(images/Reservacion.jpg);">
+	<section class="bg-title-page flex-c-m p-t-160 p-b-80 p-l-15 p-r-15" style="background-image: url(<?= base_url();?>assets/images/Reservacion.jpg);">
 		<h2 class="tit6 t-center">
 			Reservation
 		</h2>
@@ -127,25 +127,25 @@
 								<div class="wrap-inputtime size12 bo2 bo-rad-10 m-t-3 m-b-23">
 									<!-- Select2 -->
 									<select class="selection-1" name="time">
-										<option>9:00</option>
-										<option>9:30</option>
-										<option>10:00</option>
-										<option>10:30</option>
-										<option>11:00</option>
-										<option>11:30</option>
-										<option>12:00</option>
-										<option>12:30</option>
-										<option>13:00</option>
-										<option>13:30</option>
-										<option>14:00</option>
-										<option>14:30</option>
-										<option>15:00</option>
-										<option>15:30</option>
-										<option>16:00</option>
-										<option>16:30</option>
-										<option>17:00</option>
-										<option>17:30</option>
-										<option>18:00</option>
+									    <option value="9:00">9:00</option>
+										<option value="9:30">9:30</option>
+										<option value="10:00">10:00</option>
+										<option value="10:30">10:30</option>
+										<option value="11:00">11:00</option>
+										<option value="11:30">11:30</option>
+										<option value="12:00">12:00</option>
+										<option value="12:30">12:30</option>
+										<option value="13:00">13:00</option>
+										<option value="13:30">13:30</option>
+										<option value="14:00">14:00</option>
+										<option value="14:30">14:30</option>
+										<option value="15:00">15:00</option>
+										<option value="15:30">15:30</option>
+										<option value="16:00">16:00</option>
+										<option value="16:30">16:30</option>
+										<option value="17:00">17:00</option>
+										<option value="17:30">17:30</option>
+										<option value="18:00">18:00</option>
 									</select>
 								</div>
 							</div>
@@ -159,18 +159,18 @@
 								<div class="wrap-inputpeople size12 bo2 bo-rad-10 m-t-3 m-b-23">
 									<!-- Select2 -->
 									<select class="selection-1" name="people">
-										<option>1 persona</option>
-										<option>2 personas</option>
-										<option>3 personas</option>
-										<option>4 personas</option>
-										<option>5 personas</option>
-										<option>6 personas</option>
-										<option>7 personas</option>
-										<option>8 personas</option>
-										<option>9 personas</option>
-										<option>10 personas</option>
-										<option>11 personas</option>
-										<option>12 personas</option>
+									<option value="1 personas">1 persona</option>
+										<option value="2 personas">2  personas</option>
+										<option value="3 personas">3  personas</option>
+										<option value="4 personas">4  personas</option>
+										<option value="5 personas">5  personas</option>
+										<option value="6 personas">6  personas</option>
+										<option value="7 personas">7  personas</option>
+										<option value="8 personas">8  personas</option>
+										<option value="9 personas">9  personas</option>
+										<option value="10 personas">10  personas</option>
+										<option value="11 personas">11  personas</option>
+										<option value="12 personas">12  personas</option>
 									</select>
 								</div>
 							</div>

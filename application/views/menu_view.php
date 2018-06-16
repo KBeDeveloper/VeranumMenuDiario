@@ -44,7 +44,7 @@
 					<!-- Logo -->
 					<div class="logo">
 						<a href="/index.php/Welcome">
-							<img src="images/icons/Menulogo.png" alt="IMG-LOGO" data-logofixed="images/icons/Menulogo.png">
+							<img src="<?=base_url();?>assets/images/icons/Menulogo.png" alt="IMG-LOGO" data-logofixed="<?= base_url();?>assets/images/icons/Menulogo.png">
 						</a>
 					</div>
 
@@ -86,7 +86,7 @@
 	
 
 	<!-- Title Page -->
-	<section class="bg-title-page flex-c-m p-t-160 p-b-80 p-l-15 p-r-15" style="background-image: url(images/menuDiario.jpg);">
+	<section class="bg-title-page flex-c-m p-t-160 p-b-80 p-l-15 p-r-15" style="background-image: url(<?= base_url();?>assets/images/menuDiario.jpg);">
 		<h2 class="tit6 t-center">
 			menu diario 
 		</h2>
@@ -94,7 +94,7 @@
 
 
 	<section class="section-lunch bgwhite">
-		<div class="header-lunch parallax0 parallax100" style="background-image: url(images/tenedor.jpg);">
+		<div class="header-lunch parallax0 parallax100" style="background-image: url(<?= base_url();?>assets/images/tenedor.jpg);">
 			<div class="bg1-overlay t-center p-t-170 p-b-165">
 				<h2 class="tit4 t-center">
 					Desayuno
@@ -107,7 +107,7 @@
 					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
 						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/desayuno1.jpg" alt="IMG-MENU"></a>
+							<a href="#"><img src="<?= base_url();?>assets/images/desayuno1.jpg" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
@@ -128,7 +128,7 @@
 					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
 						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/desayuno2.jpg" alt="IMG-MENU"></a>
+							<a href="#"><img src="<?= base_url();?>assets/images/desayuno2.jpg" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
@@ -149,7 +149,7 @@
 					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
 						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/desayuno3.jpg" alt="IMG-MENU"></a>
+							<a href="#"><img src="<?= base_url();?>assets/images/desayuno3.jpg" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
@@ -172,7 +172,7 @@
 					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
 						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/desayuno4.jpg" alt="IMG-MENU"></a>
+							<a href="#"><img src="<?= base_url();?>assets/images/desayuno4.jpg" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
@@ -193,7 +193,7 @@
 					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
 						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/desayuno5.jpg" alt="IMG-MENU"></a>
+							<a href="#"><img src="<?= base_url();?>assets/images/desayuno5.jpg" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
@@ -214,7 +214,7 @@
 					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
 						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/desayuno6.jpg" alt="IMG-MENU"></a>
+							<a href="#"><img src="<?= base_url();?>assets/images/desayuno6.jpg" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
@@ -240,7 +240,7 @@
 
 
 	<section class="section-dinner bgwhite">
-		<div class="header-dinner parallax0 parallax100" style="background-image: url(images/cuchillo.jpg);">
+		<div class="header-dinner parallax0 parallax100" style="background-image: url(<?= base_url();?>assets/images/cuchillo.jpg);">
 			<div class="bg1-overlay t-center p-t-170 p-b-165">
 				<h2 class="tit4 t-center">
 					Almuerzo
@@ -254,7 +254,7 @@
 					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
 						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/almuerzo1.jpg" alt="IMG-MENU"></a>
+							<a href="#"><img src="<?= base_url();?>assets/images/almuerzo1.jpg" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
@@ -275,7 +275,7 @@
 					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
 						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/almuerzo2.jpg" alt="IMG-MENU"></a>
+							<a href="#"><img src="<?= base_url();?>assets/images/almuerzo2.jpg" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
@@ -296,7 +296,7 @@
 					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
 						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/almuerzo3.jpg" alt="IMG-MENU"></a>
+							<a href="#"><img src="<?= base_url();?>assets/images/almuerzo3.jpg" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
@@ -319,7 +319,7 @@
 					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
 						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/almuerzo4.jpg" alt="IMG-MENU"></a>
+							<a href="#"><img src="<?= base_url();?>assets/images/almuerzo4.jpg" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
@@ -340,7 +340,7 @@
 					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
 						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/almuerzo5.jpg" alt="IMG-MENU"></a>
+							<a href="#"><img src="<?= base_url();?>assets/images/almuerzo5.jpg" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
@@ -361,7 +361,7 @@
 					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
 						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/almuerzo6.jpg" alt="IMG-MENU"></a>
+							<a href="#"><img src="<?= base_url();?>assets/images/almuerzo6.jpg" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
@@ -384,7 +384,7 @@
 	</section>
 
 	<section class="section-dinner bgwhite">
-		<div class="header-dinner parallax0 parallax100" style="background-image: url(images/Cena.jpg);">
+		<div class="header-dinner parallax0 parallax100" style="background-image: url(<?= base_url();?>assets/images/Cena.jpg);">
 			<div class="bg1-overlay t-center p-t-170 p-b-165">
 				<h2 class="tit4 t-center">
 					Cena
@@ -398,7 +398,7 @@
 					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
 						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/cena1.jpg" alt="IMG-MENU"></a>
+							<a href="#"><img src="<?= base_url();?>assets/images/cena1.jpg" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
@@ -419,7 +419,7 @@
 					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
 						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/cena2.jpg" alt="IMG-MENU"></a>
+							<a href="#"><img src="<?= base_url();?>assets/images/cena2.jpg" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
@@ -440,7 +440,7 @@
 					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
 						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/cena3.jpg" alt="IMG-MENU"></a>
+							<a href="#"><img src="<?= base_url();?>assets/images/cena3.jpg" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
@@ -463,7 +463,7 @@
 					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
 						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/cena4.jpeg" alt="IMG-MENU"></a>
+							<a href="#"><img src="<?= base_url();?>assets/images/cena4.jpeg" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
@@ -484,7 +484,7 @@
 					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
 						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/cena5.jpg" alt="IMG-MENU"></a>
+							<a href="#"><img src="<?= base_url();?>assets/images/cena5.jpg" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
@@ -505,7 +505,7 @@
 					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
 						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/cena6.jpg" alt="IMG-MENU"></a>
+							<a href="#"><img src="<?= base_url();?>assets/images/cena6.jpg" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
@@ -528,7 +528,7 @@
 	</section>
 
 	<section class="section-dinner bgwhite">
-		<div class="header-dinner parallax0 parallax100" style="background-image: url(images/OnceImagen.jpg);">
+		<div class="header-dinner parallax0 parallax100" style="background-image: url(<?= base_url();?>assets/images/OnceImagen.jpg);">
 			<div class="bg1-overlay t-center p-t-170 p-b-165">
 				<h2 class="tit4 t-center">
 					Once
@@ -542,7 +542,7 @@
 					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
 						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/once1.jpg" alt="IMG-MENU"></a>
+							<a href="#"><img src="<?= base_url();?>assets/images/once1.jpg" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
@@ -563,7 +563,7 @@
 					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
 						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/once2.jpg" alt="IMG-MENU"></a>
+							<a href="#"><img src="<?= base_url();?>assets/images/once2.jpg" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
@@ -584,7 +584,7 @@
 					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
 						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/once3.jpg" alt="IMG-MENU"></a>
+							<a href="#"><img src="<?= base_url();?>assets/images/once3.jpg" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
@@ -607,7 +607,7 @@
 					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
 						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/once4.jpg" alt="IMG-MENU"></a>
+							<a href="#"><img src="<?= base_url();?>assets/images/once4.jpg" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
@@ -628,7 +628,7 @@
 					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
 						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/once5.jpg" alt="IMG-MENU"></a>
+							<a href="#"><img src="<?= base_url();?>assets/images/once5.jpg" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
@@ -649,7 +649,7 @@
 					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
 						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/once6.jpg" alt="IMG-MENU"></a>
+							<a href="#"><img src="<?= base_url();?>assets/images/once6.jpg" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">

@@ -24,5 +24,6 @@ class Menu_controller extends CI_Controller {
 		header('Access-Control-Allow-Origin: htpp://localhost/');
 		header('Access-Control-Allow-Credentials: true');
 		$this->load->view('menu_view');
+		
 	}
 }
