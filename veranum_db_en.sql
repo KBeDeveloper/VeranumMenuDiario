@@ -90,7 +90,7 @@ ALTER TABLE MEAL_RESERVATION                                       ADD CONSTRAIN
     FOREIGN KEY MEAL_RESERVATION (MEAL_RESERVATION_MEAL_ID)        REFERENCES                        MEAL (MEAL_ID);
 ALTER TABLE ORDER                                                  ADD CONSTRAINT            ORDER_FUNCTIONARY_ID_FK 
     FOREIGN KEY ORDER (ORDER_FUNCTIONARY_RUN)                      REFERENCES                   V_USER (V_USER_RUN);
-ALTER TABLE INPUT                                                  ADD CONSTRAINT            INPUT_ORDER_ORDER_ID_FK 
-    FOREIGN KEY INPUT (INPUT_ORDER_ORDER_ID)                       REFERENCES                      ORDER (ORDER_ID);
+ALTER TABLE INPUT_ORDER                                            ADD CONSTRAINT            INPUT_ORDER_ORDER_ID_FK 
+    FOREIGN KEY INPUT_ORDER (INPUT_ORDER_ORDER_ID)                 REFERENCES                      ORDER (ORDER_ID);
 ALTER TABLE STOCK                                                  ADD CONSTRAINT                   STOCK_MEAL_ID_FK 
     FOREIGN KEY STOCK (STOCK_MEAL_ID)                              REFERENCES                        MEAL (MEAL_ID);
