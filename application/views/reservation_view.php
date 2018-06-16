@@ -126,7 +126,7 @@
 
 								<div class="wrap-inputtime size12 bo2 bo-rad-10 m-t-3 m-b-23">
 									<!-- Select2 -->
-									<select class="selection-1" name="time">
+									<select class="selection-1" name="select-time">
 									    <option value="9:00">9:00</option>
 										<option value="9:30">9:30</option>
 										<option value="10:00">10:00</option>
@@ -158,19 +158,20 @@
 
 								<div class="wrap-inputpeople size12 bo2 bo-rad-10 m-t-3 m-b-23">
 									<!-- Select2 -->
-									<select class="selection-1" name="people">
+									<select class="selection-1" name="select-people">
 									<option value="1 personas">1 persona</option>
-										<option value="2 personas">2  personas</option>
-										<option value="3 personas">3  personas</option>
-										<option value="4 personas">4  personas</option>
-										<option value="5 personas">5  personas</option>
-										<option value="6 personas">6  personas</option>
-										<option value="7 personas">7  personas</option>
-										<option value="8 personas">8  personas</option>
-										<option value="9 personas">9  personas</option>
-										<option value="10 personas">10  personas</option>
-										<option value="11 personas">11  personas</option>
-										<option value="12 personas">12  personas</option>
+										<option value="1">1 persona</option>
+										<option value="2">2  personas</option>
+										<option value="3">3  personas</option>
+										<option value="4">4  personas</option>
+										<option value="5">5  personas</option>
+										<option value="6">6  personas</option>
+										<option value="7">7  personas</option>
+										<option value="8">8  personas</option>
+										<option value="9">9  personas</option>
+										<option value="10">10  personas</option>
+										<option value="11">11  personas</option>
+										<option value="12">12  personas</option>
 									</select>
 								</div>
 							</div>
@@ -184,7 +185,7 @@
 								</span>
 
 								<div class="wrap-inputname size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="name" placeholder="Nombre">
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-name" placeholder="Nombre">
 								</div>
 							</div>
 
@@ -195,7 +196,7 @@
 								</span>
 
 								<div class="wrap-inputphone size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="phone" placeholder="telefono">
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-phone" placeholder="telefono">
 								</div>
 							</div>
 							<div class="col-md-4">
@@ -205,7 +206,7 @@
 								</span>
 
 								<div class="wrap-inputphone size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="run" placeholder="run sin espacios">
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-run" placeholder="run sin espacios">
 								</div>
 							</div>
 
@@ -216,7 +217,7 @@
 								</span>
 
 								<div class="wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="email" placeholder="Email">
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-email" placeholder="Email">
 								</div>
 							</div>
 
