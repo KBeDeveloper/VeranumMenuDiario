@@ -44,14 +44,14 @@
 					<span class="label-input100">Insumos a pedir *</span>
 					<div class="dropDownSelect2">
 						<select class="js-select2" name="service">
-							<option>Opciones</option>
-							<option>Verduras</option>
-							<option>Almuerzos</option>
-							<option>desayunos</option>
-							<option>once</option>
-							<option>cena</option>
-							<option>bebestibles</option>
-							<option>otros</option>
+							<option value="">Opciones</option>
+							<option value="">Verduras</option>
+							<option value="">Almuerzos</option>
+							<option value="">desayunos</option>
+							<option value="">once</option>
+							<option value="">cena</option>
+							<option value="">bebestibles</option>
+							<option value="">otros</option>
 						</select>
 					</div>
 				</div>
