@@ -41,7 +41,7 @@
 				<div class="wrap_header trans-0-3">
 					<!-- Logo -->
 					<div class="logo">
-						<a href="index.html">
+						<a href="/index.php/Welcome">
 							<img src="<?=base_url();?>assets/images/icons/Menulogo.png" alt="IMG-LOGO" data-logofixed="<?=base_url();?>assets/images/icons/Menulogo.png">
 						</a>
 					</div>
@@ -51,15 +51,15 @@
 						<nav class="menu">
 							<ul class="main_menu">
 								<li>
-									<a href="<?=base_url();?>index.html">Pagina Principal</a>
+									<a href="/index.php/Welcome">Pagina Principal</a>
 								</li>
 
 								<li>
-									<a href="<?=base_url();?>application\views\menu_view.php">Menu</a>
+									<a href="/index.php/Menu_controller">Menu</a>
 								</li>
 
 								<li>
-									<a href="<?=base_url();?>application\views\reservation_view.php">Reservaciones</a>
+									<a href="/index.php/Order_controller">Reservaciones</a>
 								</li>
 								
 							</ul>
@@ -286,7 +286,7 @@
 						</h3>
 					</div>
 
-					<form class="wrap-form-booking">
+					<form class="wrap-form-booking" id="form-reservation" method="POST">
 						<div class="row">
 							<div class="col-md-6">
 								<!-- Date -->
