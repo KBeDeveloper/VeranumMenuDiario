@@ -51,15 +51,15 @@
 						<nav class="menu">
 							<ul class="main_menu">
 								<li>
-									<a href="index.html">Pagina Principal</a>
+									<a href="<?=base_url();?>index.html">Pagina Principal</a>
 								</li>
 
 								<li>
-									<a href="menu.html">Menu</a>
+									<a href="<?=base_url();?>application\views\menu_view.php">Menu</a>
 								</li>
 
 								<li>
-									<a href="reservation.html">Reservaciones</a>
+									<a href="<?=base_url();?>application\views\reservation_view.php">Reservaciones</a>
 								</li>
 								
 							</ul>
