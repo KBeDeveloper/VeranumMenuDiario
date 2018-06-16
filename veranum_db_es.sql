@@ -1,5 +1,5 @@
 DROP DATABASE IF EXISTS veranum_db;
-CREATE DATABASE veranum_db;
+CREATE DATABASE veranum_db CHARACTER SET utf8 COLLATE utf8_bin;
 
 USE veranum_db;
 
