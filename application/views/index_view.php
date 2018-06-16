@@ -287,6 +287,13 @@
 					<form class="wrap-form-booking" id="form-reservation" method="POST">
 						<div class="row">
 							<div class="col-md-6">
+								<!-- run  -->
+								<span class="txt9">
+									Run
+								</span>
+								<div class="wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23">
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="run" placeholder="run">
+								</div>
 								<!-- Date -->
 								<span class="txt9">
 									Date
@@ -335,30 +342,43 @@
 								<div class="wrap-inputpeople size12 bo2 bo-rad-10 m-t-3 m-b-23">
 									<!-- Select2 -->
 									<select class="selection-1" name="people">
-										<option>1 persona</option>
-										<option>2  personas</option>
-										<option>3  personas</option>
-										<option>4  personas</option>
-										<option>5  personas</option>
-										<option>6  personas</option>
-										<option>7  personas</option>
-										<option>8  personas</option>
-										<option>9  personas</option>
-										<option>10  personas</option>
-										<option>11  personas</option>
-										<option>12  personas</option>
+										<option value="1 personas">1 persona</option>
+										<option value="2 personas">2  personas</option>
+										<option value="3 personas">3  personas</option>
+										<option value="4 personas">4  personas</option>
+										<option value="5 personas">5  personas</option>
+										<option value="6 personas">6  personas</option>
+										<option value="7 personas">7  personas</option>
+										<option value="8 personas">8  personas</option>
+										<option value="9 personas">9  personas</option>
+										<option value="10 personas">10  personas</option>
+										<option value="11 personas">11  personas</option>
+										<option value="12 personas">12  personas</option>
 									</select>
 								</div>
-								<!-- run  -->
-								<span class="txt9">
-									Run
-								</span>
-								<div class="wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="email" placeholder="Email">
-								</div>
+								
 							</div>
 
 							<div class="col-md-6">
+								<!-- dv   -->
+								<span class="txt9">
+									dv
+								</span>
+								<div class="wrap-inputpeople size12 bo2 bo-rad-10 m-t-3 m-b-23">
+									<!-- Select3 -->
+									<select class="selection-1" name="dv">
+										<option selected value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="k">k</option>										
+									</select>
+								</div>	
 								<!-- Name -->
 								<span class="txt9">
 									Nombre 
@@ -384,25 +404,7 @@
 								<div class="wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23">
 									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="email" placeholder="Email">
 								</div>
-								<!-- dv   -->
-								<span class="txt9">
-									dv
-								</span>
-								<div class="wrap-inputpeople size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<!-- Select3 -->
-									<select class="selection-1" name="people">
-										<option>1</option>
-										<option>2</option>
-										<option>3</option>
-										<option>4</option>
-										<option>5</option>
-										<option>6</option>
-										<option>7</option>
-										<option>8</option>
-										<option>9</option>
-										<option>k</option>										
-									</select>
-								</div>								
+															
 							</div>
 						</div>
 
