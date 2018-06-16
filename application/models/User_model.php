@@ -12,11 +12,11 @@ class User_model extends CI_Model{
         return $this->db->insert('USUARIO', $user);
     }
     public function read($user_run){
-        $this->db->where('USUARIO_ID', $user_run);
+        $this->db->where('USUARIO_RUN', $user_run);
         return $this->db->get('USUARIO')->result_array();
     }
     public function update($user_run, $user_data){
-        $this->db->where('USUARIO_ID', $user_run);
+        $this->db->where('USUARIO_RUN', $user_run);
         return $this->db->update('USUARIO', $user_data);
     }
     public function delete($user_run){
