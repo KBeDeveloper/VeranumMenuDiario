@@ -70,9 +70,7 @@
 					<div class="social flex-w flex-l-m p-r-20">
 						<a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
 						<a href="#"><i class="fa fa-facebook m-l-21" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-twitter m-l-21" aria-hidden="true"></i></a>
-
-				
+						<a href="#"><i class="fa fa-twitter m-l-21" aria-hidden="true"></i></a>				
 					</div>
 				</div>
 			</div>
