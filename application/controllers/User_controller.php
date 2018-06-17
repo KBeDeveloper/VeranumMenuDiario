@@ -27,12 +27,13 @@
                 "USUARIO_DV"          => $_POST['select-dv'],
                 "USUARIO_NOMBRE"      => $this->input->post('input-name'),
                 "USUARIO_TELEFONO"    => $this->input->post('input-phone'),
-                "USUARIO_CORREO"      => $this->input->post('input-email')               
+                "USUARIO_CORREO"      => $this->input->post('input-email'),
+                "USUARIO_TIPO"        => 2             
             ];
             $order_data = [
-                "RESERVA_COMENSALES"  => $_POST['select-commensals'],
-                "RESERVA_FECHA"       => $this->input->post('input-date'),
-                "RESERVA_HORA"        => $_POST['select-hour'],
+                "RESERVA_COMENSALES"  => (int)$_POST['select-commensals'],
+                "RESERVA_FECHA"       => DateTime::createFromFormat('dd/mm/YYYY',$this->input->post('input-date')),
+                "RESERVA_HORA"        => DateTime::createFromFormat('hh:MM',$_POST['select-hour'],
                 "RESERVA_CLIENTE_RUN" => $this->input->post('input-run')
             ]; 
             if (count($this->User_model->read($user_data[0]['USUARIO_RUN']))>0){
