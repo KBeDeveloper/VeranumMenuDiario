@@ -7,7 +7,6 @@ class Menu_controller extends CI_Controller {
 		header('Access-Control-Allow-Origin: http://127.0.0.1/');
 		header('Access-Control-Allow-Origin: htpp://localhost/');
 		header('Access-Control-Allow-Credentials: true');
-		$this->load->view('menu_view');
-		
+		$this->load->view('menu_view');		
 	}
 }
