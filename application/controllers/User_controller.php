@@ -16,8 +16,8 @@
             ];
             $order_data = [
                 "RESERVA_COMENSALES"  => (int)$_POST['select-commensals'],
-                "RESERVA_FECHA"       => DateTime::createFromFormat('dd/mm/YYYY',$this->input->post('input-date')),
-                "RESERVA_HORA"        => DateTime::createFromFormat('hh:MM',$_POST['select-hour'],
+                "RESERVA_FECHA"       => DateTime::createFromFormat('d/m/Y',$this->input->post('input-date')),
+                "RESERVA_HORA"        => DateTime::createFromFormat("'t'? HH:MM",$_POST['select-hour'],
                 "RESERVA_CLIENTE_RUN" => $this->input->post('input-run')
             ]; 
             if (count($this->User_model->read($user_data[0]['USUARIO_RUN']))>0){
