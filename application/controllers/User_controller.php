@@ -22,7 +22,7 @@
             if(count($this->Reservation_model->readHour($reservation_data[0]['RESERVA_CLIENTE_RUN'],$reservation_data[0]['RESERVA_HORA'],$reservation_data[0]['RESERVA_FECHA']))>0){
             if (count($this->User_model->read($user_data[0]['USUARIO_RUN']))>0){
                 $this->Reservation_model->create($reservation_data);
-            }else //if(count($this->)){
+            }else{ //if(count($this->)){
                 $this->User_model->create($user_data);
                 $this->Reservation_model->create($reservation_data);
             }/*else{
