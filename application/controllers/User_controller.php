@@ -36,11 +36,12 @@
                 }
                 $msj = "Reserva agregada exitosamente!";
             }
-            $this->session->flashdata($msj);
+            $this->session->set_flashdata('msj',$msj);
             if($this->input->post('input-reservation-view') != null){
-                $url = '/Order_controller';
-            }            
+                redirect('/Order_controller','refresh');
+            }else{          
             redirect('/Welcome','refresh');
+            }
         }
     }
 ?>

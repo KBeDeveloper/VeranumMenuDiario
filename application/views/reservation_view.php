@@ -87,7 +87,12 @@
 			Reservation
 		</h2>
 	</section>
-
+	<?php
+		if($this->session->msg != null){
+		echo "<script>alert('".$this->session->msg."')</script>";     
+		$this->session->set_userdata("msg",null);
+		}
+		?>
 
 	<!-- Reservation -->
 	<section class="section-reservation bg1-pattern p-t-100 p-b-113">
