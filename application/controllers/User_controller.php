@@ -29,6 +29,7 @@
                     $this->User_model->create($user_data);
                     $this->Reservation_model->create($reservation_data);
                 }
-            }      
+            } 
+        }     
     }
 ?>
