@@ -9,7 +9,7 @@
             $this->load->model('User_model');
             $this->load->model('Reservation_model');          
             $msj = "";
-            $url = "/Welcome";
+            $url = '/Welcome';
             $user_data = [
                 "USUARIO_RUN"         => $this->input->post('input-run'),
                 "USUARIO_DV"          => $_POST['select-dv'],
@@ -39,7 +39,7 @@
             }
             $this->session->flashdata($msj);
             if($this->input->post('input-reservation-view') != null){
-                $url = "/Order_controller";
+                $url = '/Order_controller';
             }
             echo '<script>console.log(\''.$msj.'\')</script>'
             redirect($url,'refresh');
