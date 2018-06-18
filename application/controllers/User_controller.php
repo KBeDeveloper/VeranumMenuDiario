@@ -6,7 +6,7 @@
             $this->load->model('User_model');
             $this->load->model('Reservation_model');
             $msj = "";
-            $url = "/Welcome.php";
+            $url = "/Welcome";
             $user_data = [
                 "USUARIO_RUN"         => $this->input->post('input-run'),
                 "USUARIO_DV"          => $_POST['select-dv'],
