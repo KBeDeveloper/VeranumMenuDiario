@@ -118,7 +118,7 @@
 								</div>
 							</div>
 
-							<input name="input-reservation-view" value="reservation-view" hidden>
+							<input type="text" name="input-reservation-view" value="reservation-view" hidden>
 
 							<div class="col-md-4">
 								<!-- Time -->
