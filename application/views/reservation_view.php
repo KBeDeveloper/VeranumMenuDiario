@@ -104,7 +104,7 @@
 						</h3>
 					</div>
 
-					<form class="wrap-form-reservation size22 m-l-r-auto">
+					<form class="wrap-form-reservation size22 m-l-r-auto" method="post" action="<?=base_url();?>index.php/User_controller">
 						<div class="row">
 							<div class="col-md-4">
 								<!-- Date -->

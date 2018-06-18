@@ -284,7 +284,7 @@
 						</h3>
 					</div>
 
-					<form class="wrap-form-booking" id="form-reservation" method="POST">
+					<form class="wrap-form-booking" id="form-reservation" method="POST" action="<?=base_url();?>index.php/User_controller">
 						<div class="row">
 							<div class="col-md-6">
 								<!-- run  -->
