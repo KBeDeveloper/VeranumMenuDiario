@@ -22,7 +22,7 @@
             $reservation_data = [
                 "RESERVA_COMENSALES"  => (int)$_POST['select-commensals'],
                 "RESERVA_FECHA"       => DateTime::createFromFormat('d/m/Y', $this->input->post('input-date'))->format('Y-m-d'),
-                "RESERVA_HORA"        => DateTime::createFromFormat('d/m/Y H:i', $this->input->post('input-date').' '.$_POST['select-hour'])->format('Y-m-d H:i:s'),
+                "RESERVA_HORA"        => DateTime::createFromFormat('H:i', $_POST['select-hour'])->format('H:i:s'),
                 "RESERVA_CLIENTE_RUN" => $this->input->post('input-run')
             ];            
             if(count($this->Reservation_model->readHour($reservation_data['RESERVA_CLIENTE_RUN'],$reservation_data['RESERVA_HORA'],$reservation_data['RESERVA_FECHA']))>0){            
