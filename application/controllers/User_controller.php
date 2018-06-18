@@ -17,19 +17,18 @@
                 "USUARIO_TELEFONO"    => $this->input->post('input-phone'),
                 "USUARIO_CORREO"      => $this->input->post('input-email'),
                 "USUARIO_TIPO"        => 2             
-            ]; 
-            json_encode($user_data);           
+            ];
+                        
             $reservation_data = [
                 "RESERVA_COMENSALES"  => (int)$_POST['select-commensals'],
-                "RESERVA_FECHA"       => DateTime::createFromFormat('d/m/Y',$this->input->post('input-date')),
-                "RESERVA_HORA"        => DateTime::createFromFormat("'t'? HH:MM",$_POST['select-hour']),
+                "RESERVA_FECHA"       => DateTime::createFromFormat('d/m/Y', $this->input->post('input-date'))->format('Y-m-d'),
+                "RESERVA_HORA"        => DateTime::createFromFormat('d/m/Y H:i', $this->input->post('input-date').' '.$_POST['select-hour'])->format('Y-m-d H:i:s'),
                 "RESERVA_CLIENTE_RUN" => $this->input->post('input-run')
-            ];
-            json_encode($reservation_data);
-            if(count($this->Reservation_model->readHour($reservation_data[0]['RESERVA_CLIENTE_RUN'],$reservation_data[0]['RESERVA_HORA'],$reservation_data[0]['RESERVA_FECHA']))>0){            
+            ];            
+            if(count($this->Reservation_model->readHour($reservation_data['RESERVA_CLIENTE_RUN'],$reservation_data['RESERVA_HORA'],$reservation_data['RESERVA_FECHA']))>0){            
                 $msj = "No se pudo agregar la reserva, ya existe una registrada para esta hora";
             }else{
-                if (count($this->User_model->read($user_data[0]['USUARIO_RUN']))>0){
+                if (count($this->User_model->read($user_data['USUARIO_RUN']))>0){
                     $this->Reservation_model->create($reservation_data);                    
                 }else{
                     $this->User_model->create($user_data);
@@ -40,8 +39,8 @@
             $this->session->flashdata($msj);
             if($this->input->post('input-reservation-view') != null){
                 $url = '/Order_controller';
-            }
-            echo '<script>console.log(\''.$msj.'\')</script>'
-            redirect($url,'refresh');
+            }            
+            redirect('/Welcome','refresh');
+        }
     }
 ?>
