@@ -5,6 +5,8 @@
         public function index(){
             $this->load->model('User_model');
             $this->load->model('Reservation_model');
+            $msj = "";
+            $url = "/Welcome.php";
             $user_data = [
                 "USUARIO_RUN"         => $this->input->post('input-run'),
                 "USUARIO_DV"          => $_POST['select-dv'],
@@ -20,16 +22,20 @@
                 "RESERVA_CLIENTE_RUN" => $this->input->post('input-run')
             ];
             if(count($this->Reservation_model->readHour($reservation_data[0]['RESERVA_CLIENTE_RUN'],$reservation_data[0]['RESERVA_HORA'],$reservation_data[0]['RESERVA_FECHA']))>0){            
-
+                $msj = "No se pudo agregar la reserva, ya existe una registrada para esta hora";
             }else{
                 if (count($this->User_model->read($user_data[0]['USUARIO_RUN']))>0){
-                    $this->Reservation_model->create($reservation_data);
-                    redirect
+                    $this->Reservation_model->create($reservation_data);                    
                 }else{
                     $this->User_model->create($user_data);
                     $this->Reservation_model->create($reservation_data);
                 }
-            } 
-        }     
+                $msj = "Reserva agregada exitosamente!";
+            }
+            $this->session->flashdata($msj);
+            if($this->input->post('input-reservation-view') != null){
+                $url = "/Order_controller";
+            }
+            redirect($url,'refresh');
     }
 ?>
