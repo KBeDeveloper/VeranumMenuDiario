@@ -114,7 +114,12 @@
 	
 
 	<!-- Intro -->
-
+		<?php
+		if($this->session->msg != null){
+		echo "<script>alert('".$this->session->msg."')</script>";     
+		$this->session->set_userdata("msg",null);
+		}
+		?>   	
 		<div class="content-intro bg-white p-t-77 p-b-133">
 			<div class="container">
 				<div class="row">
