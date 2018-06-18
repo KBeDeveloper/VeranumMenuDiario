@@ -116,7 +116,7 @@
 	<!-- Intro -->
 		<?php
 		if($this->session->msg != null){
-		echo "<script>alert('".$this->session->msg."')</script>";     
+		echo "<script>alert('".$this->session->msj."')</script>";     
 		$this->session->set_userdata("msg",null);
 		}
 		?>   	
