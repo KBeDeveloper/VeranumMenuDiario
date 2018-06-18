@@ -88,9 +88,9 @@
 		</h2>
 	</section>
 	<?php
-		if($this->session->msg != null){
-		echo "<script>alert('".$this->session->msg."')</script>";     
-		$this->session->set_userdata("msg",null);
+		if($this->session->msj != null){
+		echo "<script>alert('".$this->session->msj."')</script>";     
+		$this->session->set_userdata("msj",null);
 		}
 		?>
 

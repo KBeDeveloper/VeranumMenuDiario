@@ -115,9 +115,9 @@
 
 	<!-- Intro -->
 		<?php
-		if($this->session->msg != null){
+		if($this->session->msj != null){
 		echo "<script>alert('".$this->session->msj."')</script>";     
-		$this->session->set_userdata("msg",null);
+		$this->session->set_userdata("msj",null);
 		}
 		?>   	
 		<div class="content-intro bg-white p-t-77 p-b-133">
