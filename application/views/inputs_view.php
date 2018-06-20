@@ -80,37 +80,37 @@
 	</header>
 
 	<!-- Sidebar -->
-
-	<!-- Title Page -->
-	<section class="bg-title-page flex-c-m p-t-160 p-b-80 p-l-15 p-r-15" style="background-image: url(<?= base_url();?>assets/images/Reservacion.jpg);">
-		<h2 class="tit6 t-center">
-			Reservation
-		</h2>
-	</section>
-	<!-- Reservation -->
-	<section class="section-reservation bg1-pattern p-t-100 p-b-113">
+	<br>
+	<!-- Order meal -->
+	<section class="section-reservation bg1-pattern p-t-100">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 p-b-30">
 					<div class="t-center">
-						<span class="tit2 t-center">
-							Reservacion
-						</span>
+						
 
 						<h3 class="tit3 t-center m-b-35 m-t-2">
-							libro de reservaciones
+							Peticion de Insumos
 						</h3>
 					</div>
 
 					<form class="wrap-form-booking" id="form-reservation" method="POST" action="<?=base_url();?>index.php/User_controller">
 						<div class="row">
 							<div class="col-md-6">
-								<!-- run  -->
+								<!-- Functionary Code -->
+								<span class="txt9">
+									Codigo Funcionario
+								</span>
+								<div class="wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23">
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-functionary-code" placeholder="Codigo">
+								</div>
+								<!-- RUN -->
 								<span class="txt9">
 									RUN
 								</span>
-								<div class="wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-run" placeholder="run">
+
+								<div class="wrap-inputphone size12 bo2 bo-rad-10 m-t-3 m-b-23">
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-functionary-run" placeholder="Phone">
 								</div>
 								<!-- Date -->
 								<span class="txt9">
@@ -121,64 +121,23 @@
 									<input class="my-calendar bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-date">
 									<i class="btn-calendar fa fa-calendar ab-r-m hov-pointer m-r-18" aria-hidden="true"></i>
 								</div>
-
-								<!-- Time -->
-								<span class="txt9">
-									Hora
-								</span>
-
-								<div class="wrap-inputtime size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<!-- Select2 -->
-									<select class="selection-1" name="select-hour">
-										<option value="9:00">9:00</option>
-										<option value="9:30">9:30</option>
-										<option value="10:00">10:00</option>
-										<option value="10:30">10:30</option>
-										<option value="11:00">11:00</option>
-										<option value="11:30">11:30</option>
-										<option value="12:00">12:00</option>
-										<option value="12:30">12:30</option>
-										<option value="13:00">13:00</option>
-										<option value="13:30">13:30</option>
-										<option value="14:00">14:00</option>
-										<option value="14:30">14:30</option>
-										<option value="15:00">15:00</option>
-										<option value="15:30">15:30</option>
-										<option value="16:00">16:00</option>
-										<option value="16:30">16:30</option>
-										<option value="17:00">17:00</option>
-										<option value="17:30">17:30</option>
-										<option value="18:00">18:00</option>
-									</select>
-								</div>
-
-								<!-- People -->
-								<span class="txt9">
-									N° Personas
-								</span>
-
-								<div class="wrap-inputpeople size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<!-- Select2 -->
-									<select class="selection-1" name="select-commensals">
-										<option value="1">1 persona</option>
-										<option value="2">2  personas</option>
-										<option value="3">3  personas</option>
-										<option value="4">4  personas</option>
-										<option value="5">5  personas</option>
-										<option value="6">6  personas</option>
-										<option value="7">7  personas</option>
-										<option value="8">8  personas</option>
-										<option value="9">9  personas</option>
-										<option value="10">10  personas</option>
-										<option value="11">11  personas</option>
-										<option value="12">12  personas</option>
-									</select>
-								</div>
+				
+								<!-- Order -->
+								<!--Se deberia desplegar los insumos en de la columna STOCK_NOMBRE-->
 								
 							</div>
 
 							<div class="col-md-6">
-								<!-- dv   -->
+								<!-- Name -->
+								<span class="txt9">
+									Nombre 
+								</span>
+
+								<div class="wrap-inputname size12 bo2 bo-rad-10 m-t-3 m-b-23">
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-functionary-name" placeholder="Nombre">
+								</div>
+
+								<!-- DV  -->
 								<span class="txt9">
 									DV
 								</span>
@@ -197,32 +156,19 @@
 										<option value="9">9</option>
 										<option value="k">k</option>										
 									</select>
-								</div>	
-								<!-- Name -->
-								<span class="txt9">
-									Nombre 
-								</span>
-
-								<div class="wrap-inputname size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-name" placeholder="Nombre">
 								</div>
-
-								<!-- Phone -->
-								<span class="txt9">
-									Telefono
-								</span>
-
-								<div class="wrap-inputphone size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-phone" placeholder="Phone">
-								</div>
-
+								
 								<!-- Email -->
 								<span class="txt9">
 									Correo electrónico
 								</span>
 								<div class="wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-email" placeholder="Email">
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="email" name="input-functionary-email" placeholder="Email">
 								</div>
+
+								<!-- Quantity -->	
+								<!--En el select se deberia desplegar las unidades segun los insumos-->
+								
 															
 							</div>
 						</div>
@@ -230,133 +176,14 @@
 						<div class="wrap-btn-booking flex-c-m m-t-6">
 							<!-- Button3 -->
 							<button type="submit" class="btn3 flex-c-m size13 txt11 trans-0-4">
-								Reservar
+								Enviar Pedido
 							</button>
 						</div>
 					</form>
 				</div>
 			</div>
 
-			<div class="info-reservation flex-w p-t-80">
-				<div class="size23 w-full-md p-t-40 p-r-30 p-r-0-md">
-					<h4 class="txt5 m-b-18">
-						Reserva via celular
-					</h4>
-
-					<p class="size25">
-						Para reservar via telefono solo debes llamar al numero que sale en pantalla
-					
-						<span class="txt24">(001) 345 6889</span>
-					</p>
-				</div>
-
-				
-
-			</div>
-		</div>
-	</section>
-
-
-	<!-- Footer -->
-	<footer class="bg1">
-		<div class="container p-t-40 p-b-70">
-			<div class="row">
-				<div class="col-sm-6 col-md-4 p-t-50">
-					<!-- - -->
-					<h4 class="txt13 m-b-33">
-					 Contactanos
-					</h4>
-
-					<ul class="m-b-70">
-						<li class="txt14 m-b-14">
-							<i class="fa fa-map-marker fs-16 dis-inline-block size19" aria-hidden="true"></i>
-							 Piso 8° , 379 Hudson St, New York, NY 10018
-						</li>
-
-						<li class="txt14 m-b-14">
-							<i class="fa fa-phone fs-16 dis-inline-block size19" aria-hidden="true"></i>
-							(+1) 96 716 6879
-						</li>
-
-						<li class="txt14 m-b-14">
-							<i class="fa fa-envelope fs-13 dis-inline-block size19" aria-hidden="true"></i>
-							contacto@sitio.com
-						</li>
-					</ul>
-
-					<!-- - -->
-					<h4 class="txt13 m-b-32">
-						Horarios de apertura
-					</h4>
-
-					<ul>
-						<li class="txt14">
-							09:30 AM – 11:00 PM
-						</li>
-
-						<li class="txt14">
-							todo el dia
-						</li>
-					</ul>
-				</div>
-
-				<div class="col-sm-6 col-md-4 p-t-50">
-					<!-- - -->
-					<h4 class="txt13 m-b-33">
-						Ultimo de twiter
-					</h4>
-
-					<div class="m-b-25">
-						<span class="fs-13 color2 m-r-5">
-							<i class="fa fa-twitter" aria-hidden="true"></i>
-						</span>
-						<a href="#" class="txt15">
-							@colorlib
-						</a>
-
-						<p class="txt14 m-b-18">
-							Activello es una buena opción. Tiene un control 
-							deslizante integrado que muestra la imagen mostrada 
-							en el control deslizante.
-							<a href="#" class="txt15">
-								https://buff.ly/2zaSfAQ
-							</a>
-						</p>
-
-						<span class="txt16">
-							21 Dec 2017
-						</span>
-					</div>
-
-					<div>
-						<span class="fs-13 color2 m-r-5">
-							<i class="fa fa-twitter" aria-hidden="true"></i>
-						</span>
-						<a href="#" class="txt15">
-							@colorlib
-						</a>
-
-						<p class="txt14 m-b-18">
-							Activello es una buena opción. Tiene un control deslizante integrado que muestra
-							<a href="#" class="txt15">
-								https://buff.ly/2zaSfAQ
-							</a>
-						</p>
-
-						<span class="txt16">
-							21 Dic 2017
-						</span>
-					</div>
-				</div>
-
-				
-		
-
-					
-				</div>
-			</div>
-		</div>
-	</footer>
+			
 
 
 	<!-- Back to top -->

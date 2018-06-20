@@ -228,7 +228,7 @@
 									Correo electrónico
 								</span>
 								<div class="wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-email" placeholder="Email">
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="email" name="input-email" placeholder="Email">
 								</div>
 															
 							</div>
