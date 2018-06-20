@@ -105,132 +105,23 @@
 			<div class="row p-t-108 p-b-70">
 				<div class="col-md-8 col-lg-6 m-l-r-auto">
 					<!-- Block3 -->
-					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="<?= base_url();?>assets/images/desayuno1.jpg" alt="IMG-MENU"></a>
-						</div>
-
+					<?php foreach($listaD as $key=>$l){?>
+					<div class="blo3 flex-w flex-col-l-sm m-b-30">						
 						<div class="text-blo3 size21 flex-col-l-m">
 							<a href="#" class="txt21 m-b-3">
-								Sed varius
+								<?=$l['COMIDA_NOMBRE'] ?>
 							</a>
 
 							<span class="txt23">
-								Aenean pharetra tortor dui in pellentesque
+							<?=$l['COMIDA_DESCRIPCION'] ?>
 							</span>
 
 							<span class="txt22 m-t-20">
-								$29.79
+							<?=$l['COMIDA_PRECIO'] ?>
 							</span>
 						</div>
 					</div>
-
-					<!-- Block3 -->
-					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="<?= base_url();?>assets/images/desayuno2.jpg" alt="IMG-MENU"></a>
-						</div>
-
-						<div class="text-blo3 size21 flex-col-l-m">
-							<a href="#" class="txt21 m-b-3">
-								tempus aliquet
-							</a>
-
-							<span class="txt23">
-								Aenean condimentum ante erat
-							</span>
-
-							<span class="txt22 m-t-20">
-								$45.09
-							</span>
-						</div>
-					</div>
-
-					<!-- Block3 -->
-					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="<?= base_url();?>assets/images/desayuno3.jpg" alt="IMG-MENU"></a>
-						</div>
-
-						<div class="text-blo3 size21 flex-col-l-m">
-							<a href="#" class="txt21 m-b-3">
-								Duis massa
-							</a>
-
-							<span class="txt23">
-								Proin lacinia nisl ut ultricies posuere nulla
-							</span>
-
-							<span class="txt22 m-t-20">
-								$12.75
-							</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-8 col-lg-6 m-l-r-auto">
-					<!-- Block3 -->
-					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="<?= base_url();?>assets/images/desayuno4.jpg" alt="IMG-MENU"></a>
-						</div>
-
-						<div class="text-blo3 size21 flex-col-l-m">
-							<a href="#" class="txt21 m-b-3">
-								sbrisalona
-							</a>
-
-							<span class="txt23">
-								Proin lacinia nisl ut ultricies posuere nulla
-							</span>
-
-							<span class="txt22 m-t-20">
-								$29.79
-							</span>
-						</div>
-					</div>
-
-					<!-- Block3 -->
-					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="<?= base_url();?>assets/images/desayuno5.jpg" alt="IMG-MENU"></a>
-						</div>
-
-						<div class="text-blo3 size21 flex-col-l-m">
-							<a href="#" class="txt21 m-b-3">
-								Cras eget magna
-							</a>
-
-							<span class="txt23">
-								Sed fermentum eros vitae eros
-							</span>
-
-							<span class="txt22 m-t-20">
-								$45.09
-							</span>
-						</div>
-					</div>
-
-					<!-- Block3 -->
-					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="<?= base_url();?>assets/images/desayuno6.jpg" alt="IMG-MENU"></a>
-						</div>
-
-						<div class="text-blo3 size21 flex-col-l-m">
-							<a href="#" class="txt21 m-b-3">
-								Nullam maximus
-							</a>
-
-							<span class="txt23">
-								Duis massa nibh porttitor nec imperdiet eget
-							</span>
-
-							<span class="txt22 m-t-20">
-								$12.75
-							</span>
-						</div>
-					</div>
+					<?php }?>
 				</div>
 			</div>
 		</div>
@@ -252,132 +143,23 @@
 			<div class="row p-t-108 p-b-70">
 				<div class="col-md-8 col-lg-6 m-l-r-auto">
 					<!-- Block3 -->
-					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="<?= base_url();?>assets/images/almuerzo1.jpg" alt="IMG-MENU"></a>
-						</div>
-
+					<?php foreach($listaA as $key=>$l){?>
+						<div class="blo3 flex-w flex-col-l-sm m-b-30">						
 						<div class="text-blo3 size21 flex-col-l-m">
 							<a href="#" class="txt21 m-b-3">
-								Maecenas tristique
+								<?=$l['COMIDA_NOMBRE'] ?>
 							</a>
 
 							<span class="txt23">
-								Aenean pharetra tortor dui in pellentesque
+							<?=$l['COMIDA_DESCRIPCION'] ?>
 							</span>
 
 							<span class="txt22 m-t-20">
-								$29.79
+							<?=$l['COMIDA_PRECIO'] ?>
 							</span>
 						</div>
 					</div>
-
-					<!-- Block3 -->
-					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="<?= base_url();?>assets/images/almuerzo2.jpg" alt="IMG-MENU"></a>
-						</div>
-
-						<div class="text-blo3 size21 flex-col-l-m">
-							<a href="#" class="txt21 m-b-3">
-								Pine nut sbrisalona
-							</a>
-
-							<span class="txt23">
-								Aenean condimentum ante erat
-							</span>
-
-							<span class="txt22 m-t-20">
-								$45.09
-							</span>
-						</div>
-					</div>
-
-					<!-- Block3 -->
-					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="<?= base_url();?>assets/images/almuerzo3.jpg" alt="IMG-MENU"></a>
-						</div>
-
-						<div class="text-blo3 size21 flex-col-l-m">
-							<a href="#" class="txt21 m-b-3">
-								Suspendisse eu
-							</a>
-
-							<span class="txt23">
-								Proin lacinia nisl ut ultricies posuere nulla
-							</span>
-
-							<span class="txt22 m-t-20">
-								$12.75
-							</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-8 col-lg-6 m-l-r-auto">
-					<!-- Block3 -->
-					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="<?= base_url();?>assets/images/almuerzo4.jpg" alt="IMG-MENU"></a>
-						</div>
-
-						<div class="text-blo3 size21 flex-col-l-m">
-							<a href="#" class="txt21 m-b-3">
-								Cras maximus
-							</a>
-
-							<span class="txt23">
-								Proin lacinia nisl ut ultricies posuere nulla
-							</span>
-
-							<span class="txt22 m-t-20">
-								$29.79
-							</span>
-						</div>
-					</div>
-
-					<!-- Block3 -->
-					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="<?= base_url();?>assets/images/almuerzo5.jpg" alt="IMG-MENU"></a>
-						</div>
-
-						<div class="text-blo3 size21 flex-col-l-m">
-							<a href="#" class="txt21 m-b-3">
-								Pine nut sbrisalona
-							</a>
-
-							<span class="txt23">
-								Sed fermentum eros vitae eros
-							</span>
-
-							<span class="txt22 m-t-20">
-								$45.09
-							</span>
-						</div>
-					</div>
-
-					<!-- Block3 -->
-					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="<?= base_url();?>assets/images/almuerzo6.jpg" alt="IMG-MENU"></a>
-						</div>
-
-						<div class="text-blo3 size21 flex-col-l-m">
-							<a href="#" class="txt21 m-b-3">
-								Tempor malesuada
-							</a>
-
-							<span class="txt23">
-								Duis massa nibh porttitor nec imperdiet eget
-							</span>
-
-							<span class="txt22 m-t-20">
-								$12.75
-							</span>
-						</div>
-					</div>
+					<?php }?>
 				</div>
 			</div>
 		</div>
@@ -396,132 +178,23 @@
 			<div class="row p-t-108 p-b-70">
 				<div class="col-md-8 col-lg-6 m-l-r-auto">
 					<!-- Block3 -->
-					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="<?= base_url();?>assets/images/cena1.jpg" alt="IMG-MENU"></a>
-						</div>
-
+					<?php foreach($listaC as $key=>$l){?>
+						<div class="blo3 flex-w flex-col-l-sm m-b-30">						
 						<div class="text-blo3 size21 flex-col-l-m">
 							<a href="#" class="txt21 m-b-3">
-								Maecenas tristique
+								<?=$l['COMIDA_NOMBRE'] ?>
 							</a>
 
 							<span class="txt23">
-								Aenean pharetra tortor dui in pellentesque
+							<?=$l['COMIDA_DESCRIPCION'] ?>
 							</span>
 
 							<span class="txt22 m-t-20">
-								$29.79
+							<?=$l['COMIDA_PRECIO'] ?>
 							</span>
 						</div>
 					</div>
-
-					<!-- Block3 -->
-					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="<?= base_url();?>assets/images/cena2.jpg" alt="IMG-MENU"></a>
-						</div>
-
-						<div class="text-blo3 size21 flex-col-l-m">
-							<a href="#" class="txt21 m-b-3">
-								Pine nut sbrisalona
-							</a>
-
-							<span class="txt23">
-								Aenean condimentum ante erat
-							</span>
-
-							<span class="txt22 m-t-20">
-								$45.09
-							</span>
-						</div>
-					</div>
-
-					<!-- Block3 -->
-					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="<?= base_url();?>assets/images/cena3.jpg" alt="IMG-MENU"></a>
-						</div>
-
-						<div class="text-blo3 size21 flex-col-l-m">
-							<a href="#" class="txt21 m-b-3">
-								Suspendisse eu
-							</a>
-
-							<span class="txt23">
-								Proin lacinia nisl ut ultricies posuere nulla
-							</span>
-
-							<span class="txt22 m-t-20">
-								$12.75
-							</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-8 col-lg-6 m-l-r-auto">
-					<!-- Block3 -->
-					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="<?= base_url();?>assets/images/cena4.jpeg" alt="IMG-MENU"></a>
-						</div>
-
-						<div class="text-blo3 size21 flex-col-l-m">
-							<a href="#" class="txt21 m-b-3">
-								Cras maximus
-							</a>
-
-							<span class="txt23">
-								Proin lacinia nisl ut ultricies posuere nulla
-							</span>
-
-							<span class="txt22 m-t-20">
-								$29.79
-							</span>
-						</div>
-					</div>
-
-					<!-- Block3 -->
-					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="<?= base_url();?>assets/images/cena5.jpg" alt="IMG-MENU"></a>
-						</div>
-
-						<div class="text-blo3 size21 flex-col-l-m">
-							<a href="#" class="txt21 m-b-3">
-								Pine nut sbrisalona
-							</a>
-
-							<span class="txt23">
-								Sed fermentum eros vitae eros
-							</span>
-
-							<span class="txt22 m-t-20">
-								$45.09
-							</span>
-						</div>
-					</div>
-
-					<!-- Block3 -->
-					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="<?= base_url();?>assets/images/cena6.jpg" alt="IMG-MENU"></a>
-						</div>
-
-						<div class="text-blo3 size21 flex-col-l-m">
-							<a href="#" class="txt21 m-b-3">
-								Tempor malesuada
-							</a>
-
-							<span class="txt23">
-								Duis massa nibh porttitor nec imperdiet eget
-							</span>
-
-							<span class="txt22 m-t-20">
-								$12.75
-							</span>
-						</div>
-					</div>
+					<?php }?>
 				</div>
 			</div>
 		</div>
@@ -540,132 +213,24 @@
 			<div class="row p-t-108 p-b-70">
 				<div class="col-md-8 col-lg-6 m-l-r-auto">
 					<!-- Block3 -->
-					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="<?= base_url();?>assets/images/once1.jpg" alt="IMG-MENU"></a>
-						</div>
-
+					<?php foreach($listaO as $key=>$l){?>
+						<div class="blo3 flex-w flex-col-l-sm m-b-30">						
 						<div class="text-blo3 size21 flex-col-l-m">
 							<a href="#" class="txt21 m-b-3">
-								Maecenas tristique
+								<?=$l['COMIDA_NOMBRE'] ?>
 							</a>
 
 							<span class="txt23">
-								Aenean pharetra tortor dui in pellentesque
+							<?=$l['COMIDA_DESCRIPCION'] ?>
 							</span>
 
 							<span class="txt22 m-t-20">
-								$29.79
+							<?=$l['COMIDA_PRECIO'] ?>
 							</span>
 						</div>
 					</div>
-
-					<!-- Block3 -->
-					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="<?= base_url();?>assets/images/once2.jpg" alt="IMG-MENU"></a>
-						</div>
-
-						<div class="text-blo3 size21 flex-col-l-m">
-							<a href="#" class="txt21 m-b-3">
-								Pine nut sbrisalona
-							</a>
-
-							<span class="txt23">
-								Aenean condimentum ante erat
-							</span>
-
-							<span class="txt22 m-t-20">
-								$45.09
-							</span>
-						</div>
-					</div>
-
-					<!-- Block3 -->
-					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="<?= base_url();?>assets/images/once3.jpg" alt="IMG-MENU"></a>
-						</div>
-
-						<div class="text-blo3 size21 flex-col-l-m">
-							<a href="#" class="txt21 m-b-3">
-								Suspendisse eu
-							</a>
-
-							<span class="txt23">
-								Proin lacinia nisl ut ultricies posuere nulla
-							</span>
-
-							<span class="txt22 m-t-20">
-								$12.75
-							</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-8 col-lg-6 m-l-r-auto">
-					<!-- Block3 -->
-					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="<?= base_url();?>assets/images/once4.jpg" alt="IMG-MENU"></a>
-						</div>
-
-						<div class="text-blo3 size21 flex-col-l-m">
-							<a href="#" class="txt21 m-b-3">
-								Cras maximus
-							</a>
-
-							<span class="txt23">
-								Proin lacinia nisl ut ultricies posuere nulla
-							</span>
-
-							<span class="txt22 m-t-20">
-								$29.79
-							</span>
-						</div>
-					</div>
-
-					<!-- Block3 -->
-					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="<?= base_url();?>assets/images/once5.jpg" alt="IMG-MENU"></a>
-						</div>
-
-						<div class="text-blo3 size21 flex-col-l-m">
-							<a href="#" class="txt21 m-b-3">
-								Pine nut sbrisalona
-							</a>
-
-							<span class="txt23">
-								Sed fermentum eros vitae eros
-							</span>
-
-							<span class="txt22 m-t-20">
-								$45.09
-							</span>
-						</div>
-					</div>
-
-					<!-- Block3 -->
-					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="<?= base_url();?>assets/images/once6.jpg" alt="IMG-MENU"></a>
-						</div>
-
-						<div class="text-blo3 size21 flex-col-l-m">
-							<a href="#" class="txt21 m-b-3">
-								Tempor malesuada
-							</a>
-
-							<span class="txt23">
-								Duis massa nibh porttitor nec imperdiet eget
-							</span>
-
-							<span class="txt22 m-t-20">
-								$12.75
-							</span>
-						</div>
-					</div>
+					<?php }?>
+					
 				</div>
 			</div>
 		</div>
