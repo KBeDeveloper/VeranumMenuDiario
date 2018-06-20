@@ -18,7 +18,6 @@
                 //para cada input de la comida, se consulta a la tabla stock si dicho insumo tiene una cantidad mayor a cero, 
                 //utilizando la función getInputFromStock del modelo Meal_model
             }
-            $this->db->query('SELECT STOCK_CANT_DISPONIBLE FROM STOCK '):
         }
     }
 ?>
