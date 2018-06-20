@@ -32,5 +32,15 @@ class Meal_model extends CI_Model{
         $this->db->where('COMIDA_TIPO',$meal_type);
         return $this->db->get('COMIDA')->result_array();
     }
+
+    public function getInputsByMealId($meal_id){
+        $this->db->where('INSUMO_COMIDA_COMIDA_ID', $meal_id);
+        return $this->db->get('INSUMO_COMIDA')->result_array();
+    }
+
+    public function getInputFromStock($input_id){
+        $this->db->where('STOCK_ID', $input_id);
+        return $this->db->get('STOCK')->result_array();
+    }
 }
 ?>
