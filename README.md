@@ -18,3 +18,4 @@ June 16, 2018 - 11:20 AM: Se ha añadido el archivo Order_model.php al directori
 June 16, 2018 - 14:17 PM: Se añadieron los controladores 'Menu_controller' y 'Order_controller' al directorio '/controllers'.
 June 19, 2018 - 20:04 PM: Se ha añadido el archivo 'Functionary_controller' al directorio 'aplication/controllers'.
 June 19, 2018 - 22:38 PM: Se ha añadido el archivo 'insert_meal.sql' al directorio principal.
+June 20, 2018 - 22:39 PM: Se añadieron los archivos 'jquery.dataTables.min.js' y 'jquery.dataTables.min.css' en el directorio '/assets'
