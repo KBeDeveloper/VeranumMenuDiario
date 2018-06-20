@@ -180,26 +180,41 @@
 						</div>
 
 						<div class="row">
-							<table class="col" id="table-stock">
+						<div class="col-md-2">
+						</div>
+							<table class="col-md-8" id="table-stock">
 								<thead>
-									<th>ID</th>
-									<th>Nombre</th>
-									<th>Cantidad Disponible</th>
-									<th>Cantidad a solicitar</th>
-									<th></th>									
+									<tr>
+										<th>ID</th>
+										<th>Nombre</th>
+										<th>Cantidad Disponible</th>
+										<th>Cantidad a solicitar</th>
+										<th></th>
+									</tr>									
 								</thead>
 								<tbody>
-								<?php foreach($stock_List as $key=>$l){?>
-									<tr><?= $l['STOCK_ID']?></tr>
-									<tr><?= $l['STOCK_NOMBRE']?></tr>
-									<tr><?= $l['STOCK_CANT_DISPONIBLE']?></tr>
-									<tr><?php echo
-										'<input type="">;
-									?></tr>
-									<tr><a href=""></a><?= ?></tr>
+								<?php foreach($stock_list as $key=>$l){?>
+									<tr>
+										<td><?= $l['STOCK_ID']?></td>
+										<td><?= $l['STOCK_NOMBRE']?></td>
+										<td><?= $l['STOCK_CANT_DISPONIBLE']?></td>
+										<td>
+											<div class="col-md-8">
+												<input class="form-control" type="text" id="" name="input-quantity">
+											</div>
+										</td>
+										<td>
+											<div class="col-md-4">
+												<a class="btn3 flex-c-m size13 txt11 trans-0-4" href="#" role="button">Agregar</a> 
+											</div>
+											
+										</td>
+									</tr>
 								<?php }?>
 								</tbody>
 							</table>
+							<div class="col-md-2">
+							</div>
 						</div>
 
 						<div class="wrap-btn-booking flex-c-m m-t-6">
@@ -253,6 +268,12 @@
 	<script type="text/javascript" src="<?= base_url();?>assets/vendor/lightbox2/js/lightbox.min.js"></script>
 <!--===============================================================================================-->
 	<script src="<?= base_url();?>assets/js/main.js"></script>
+
+<script>
+$(document).ready( function () {
+    $('#table-stock').DataTable();
+} );
+</script>
 
 </body>
 </html>
