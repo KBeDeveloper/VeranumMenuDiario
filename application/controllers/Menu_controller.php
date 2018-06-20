@@ -12,6 +12,6 @@ class Menu_controller extends CI_Controller {
 		$listaM['listaA']=$this->Meal_model->getAllByType(2);
 		$listaM['listaC']=$this->Meal_model->getAllByType(3);
 		$listaM['listaO']=$this->Meal_model->getAllByType(4);				
-		$this->load->view('menu_view',$listaM);		
+		$this->load->view('menu_view',$listaM);
 	}
 }
