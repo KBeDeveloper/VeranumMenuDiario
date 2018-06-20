@@ -29,6 +29,8 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/vendor/lightbox2/css/lightbox.min.css">
 <!--===============================================================================================-->
+    <script type="text/javascript" src="<?= base_url();?>assets/js/jquery.dataTables.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/css/jquery.dataTables.min.css">
 	<link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/css/util.css">
 	<link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/css/main.css">
 <!--===============================================================================================-->
@@ -123,7 +125,7 @@
 								</div>
 				
 								<!-- Order -->
-								<!--Se deberia desplegar los insumos en de la columna STOCK_NOMBRE-->
+								
 								
 							</div>
 
