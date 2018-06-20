@@ -372,6 +372,7 @@
 								<div class="wrap-inputpeople size12 bo2 bo-rad-10 m-t-3 m-b-23">
 									<!-- Select3 -->
 									<select class="selection-1" name="select-dv">
+										<option value="0">0</option>
 										<option selected value="1">1</option>
 										<option value="2">2</option>
 										<option value="3">3</option>
