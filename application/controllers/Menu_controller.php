@@ -10,7 +10,7 @@ class Menu_controller extends CI_Controller {
 		$this->load->model('Meal_model');
 		$listaD['listaD']=$this->Meal_model->getAllByType(1);
 		$listaA['listaA']=$this->Meal_model->getAllByType(2);
-		$listaC['listC']=$this->Meal_model->getAllByType(3);
+		$listaC['listaC']=$this->Meal_model->getAllByType(3);
 		$listaO['listaO']=$this->Meal_model->getAllByType(4);
 		$this->load->view('menu_view',$listaD,$listaA,$listaC,$listaO);		
 	}
