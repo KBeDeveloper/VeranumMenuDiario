@@ -27,7 +27,7 @@ class User_model extends CI_Model{
         return $this->db->get('USUARIO')->result_array();
     }
     //revisar. (lo hizo el seba XD)
-    public  function readByType($user_type){
+    public function readByType($user_type){
         $this->db->where('USUARIO_TIPO',$user_type);
         return $this->db->get('USUARIO')->result_array();
     }

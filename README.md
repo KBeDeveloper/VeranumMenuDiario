@@ -16,3 +16,4 @@ June 14, 2018 - 11:40 PM: Se ha añadido el script preliminar de la base de dato
 June 15, 2018 - 09:34 PM: Se ha añadido el archivo User_model.php al directorio 'applicacion/models'
 June 16, 2018 - 11:20 AM: Se ha añadido el archivo Order_model.php al directorio 'application/models'.
 June 16, 2018 - 14:17 PM: Se añadieron los controladores 'Menu_controller' y 'Order_controller'.
+June 19, 2018 - 20:04 PM: Se ha añadido el archivo 'Functionary_controller' al directorio 'aplication/controllers'.
