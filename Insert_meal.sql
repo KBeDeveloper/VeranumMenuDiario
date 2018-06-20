@@ -15,3 +15,8 @@ VALUES ("Huevo",10000),("Bacon",10000),("Pan",10000),("Cereal",10000),
        ("Pasta",10000),("Carne",20000),("Cebolla",5000),("Tomate",9000),
        ("Te",3000),("Jamon",5940),("Waffles",5000),("Salmon",3500),
        ("Arroz",5000),("Sopa",4000),("Ajo",10000),("Betabeles",10000);
+
+INSERT INTO `insumo_comida`(`INSUMO_COMIDA_COMIDA_ID`, `INSUMO_COMIDA_STOCK_ID`) 
+VALUES (9,1),(9,2),(10,3),(10,4),(11,5),(11,6),(12,7),
+       (12,8),(13,9),(13,10),(14,11),(14,12),(15,13),
+       (15,14),(16,15),(16,16);
