@@ -27,31 +27,31 @@
 
 				<div class="wrap-input100 validate-input bg1" data-validate="Porfavor ingresa tu nombre">
 					<span class="label-input100">Nombre del Funcionario *</span>
-					<input class="input100" type="text" name="name" placeholder="Nombre">
+					<input class="input100" type="text" name="input-functionary-name" placeholder="Nombre">
 				</div>
 
 				<div class="wrap-input100 validate-input bg1 rs1-wrap-input100" data-validate = "ingresa tu codigo de tarjeta">
-					<span class="label-input100">Codigo Funcionario *</span>
-					<input class="input100" type="text" name="email" placeholder="Codigo">
+					<span class="label-input100">Codigo Funcionario</span>
+					<input class="input100" type="text" name="input-funtionary-code" placeholder="Codigo">
 				</div>
 
 				<div class="wrap-input100 bg1 rs1-wrap-input100">
 					<span class="label-input100">Email</span>
-					<input class="input100" type="text" name="phone" placeholder="Email">
+					<input class="input100" type="email" name="input-funtionary-email" placeholder="Email">
 				</div>
 
 				<div class="wrap-input100 input100-select bg1">
-					<span class="label-input100">Insumos a pedir *</span>
+					<span class="label-input100">Insumos a pedir</span>
 					<div class="dropDownSelect2">
-						<select class="js-select2" name="service">
-							<option value="">Opciones</option>
-							<option value="">Verduras</option>
-							<option value="">Almuerzos</option>
-							<option value="">desayunos</option>
-							<option value="">once</option>
-							<option value="">cena</option>
-							<option value="">bebestibles</option>
-							<option value="">otros</option>
+						<select class="js-select2" name="select-order">
+							<option value=""></option>
+							<option value=""></option>
+							<option value=""></option>
+							<option value=""></option>
+							<option value=""></option>
+							<option value=""></option>
+							<option value=""></option>
+							<option value=""></option>
 						</select>
 					</div>
 				</div>
@@ -99,7 +99,7 @@
 
 				<div class="wrap-input100 validate-input bg0 rs1-alert-validate" data-validate = "Porfavor Ingresa la descripcion de insumos">
 					<span class="label-input100">Peticion</span>
-					<textarea class="input100" name="message" placeholder="ingresa la descripcion y la cantidad de los insumos elegidos"></textarea>
+					<textarea class="input100" name="input-message" placeholder="ingresa la descripcion y la cantidad de los insumos elegidos"></textarea>
 				</div>
 
 				<div class="container-contact100-form-btn">
