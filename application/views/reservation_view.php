@@ -109,23 +109,26 @@
 						</h3>
 					</div>
 
-					<form class="wrap-form-reservation size22 m-l-r-auto" method="post" action="<?=base_url();?>index.php/User_controller">
+					<form class="wrap-form-booking" id="form-reservation" method="POST" action="<?=base_url();?>index.php/User_controller">
 						<div class="row">
-							<div class="col-md-4">
+							<div class="col-md-6">
+								<!-- run  -->
+								<span class="txt9">
+									RUN
+								</span>
+								<div class="wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23">
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-run" placeholder="run">
+								</div>
 								<!-- Date -->
 								<span class="txt9">
 									Fecha
 								</span>
 
 								<div class="wrap-inputdate pos-relative txt10 size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="my-calendar bo-rad-10 sizefull txt10 p-l-20" type="text" name="date">
+									<input class="my-calendar bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-date">
 									<i class="btn-calendar fa fa-calendar ab-r-m hov-pointer m-r-18" aria-hidden="true"></i>
 								</div>
-							</div>
 
-							<input type="text" name="input-reservation-view" value="reservation-view" hidden>
-
-							<div class="col-md-4">
 								<!-- Time -->
 								<span class="txt9">
 									Hora
@@ -134,7 +137,7 @@
 								<div class="wrap-inputtime size12 bo2 bo-rad-10 m-t-3 m-b-23">
 									<!-- Select2 -->
 									<select class="selection-1" name="select-hour">
-									    <option value="9:00">9:00</option>
+										<option value="9:00">9:00</option>
 										<option value="9:30">9:30</option>
 										<option value="10:00">10:00</option>
 										<option value="10:30">10:30</option>
@@ -155,17 +158,15 @@
 										<option value="18:00">18:00</option>
 									</select>
 								</div>
-							</div>
 
-							<div class="col-md-4">
 								<!-- People -->
 								<span class="txt9">
-									Numero de Personas
+									N° Personas
 								</span>
 
 								<div class="wrap-inputpeople size12 bo2 bo-rad-10 m-t-3 m-b-23">
 									<!-- Select2 -->
-									<select class="selection-1" name="select-people">
+									<select class="selection-1" name="select-commensals">
 										<option value="1">1 persona</option>
 										<option value="2">2  personas</option>
 										<option value="3">3  personas</option>
@@ -180,53 +181,57 @@
 										<option value="12">12  personas</option>
 									</select>
 								</div>
+								
 							</div>
-						</div>
 
-						<div class="row">
-							<div class="col-md-4">
+							<div class="col-md-6">
+								<!-- dv   -->
+								<span class="txt9">
+									DV
+								</span>
+								<div class="wrap-inputpeople size12 bo2 bo-rad-10 m-t-3 m-b-23">
+									<!-- Select3 -->
+									<select class="selection-1" name="select-dv">
+										<option value="0">0</option>
+										<option selected value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9">9</option>
+										<option value="k">k</option>										
+									</select>
+								</div>	
 								<!-- Name -->
 								<span class="txt9">
-									Nombre
+									Nombre 
 								</span>
 
 								<div class="wrap-inputname size12 bo2 bo-rad-10 m-t-3 m-b-23">
 									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-name" placeholder="Nombre">
 								</div>
-							</div>
 
-							<div class="col-md-4">
 								<!-- Phone -->
 								<span class="txt9">
-									Numero de Telefono
+									Telefono
 								</span>
 
 								<div class="wrap-inputphone size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-phone" placeholder="telefono">
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-phone" placeholder="Phone">
 								</div>
-							</div>
-							<div class="col-md-4">
-								<!-- Phone -->
-								<span class="txt9">
-									Run del cliente
-								</span>
 
-								<div class="wrap-inputphone size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-run" placeholder="run sin espacios">
-								</div>
-							</div>
-
-							<div class="col-md-4">
 								<!-- Email -->
 								<span class="txt9">
-									Email
+									Correo electrónico
 								</span>
-
 								<div class="wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23">
 									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-email" placeholder="Email">
 								</div>
+															
 							</div>
-
 						</div>
 
 						<div class="wrap-btn-booking flex-c-m m-t-6">
