@@ -249,7 +249,9 @@
 	<!-- Container Selection1 -->
 	<div id="dropDownSelect1"></div>
 
-
+    <script type="text/javascript">
+		$("").
+	</script>
 
 <!--===============================================================================================-->
 	<script type="text/javascript" src="<?= base_url();?>assets/vendor/jquery/jquery-3.2.1.min.js"></script>
