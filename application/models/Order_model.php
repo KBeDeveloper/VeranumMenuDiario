@@ -1,7 +1,7 @@
 <?php 
 DEFINED('BASEPATH') OR EXIT('No direct script access allowed');
 
-class User_model extends CI_Model{
+class Order_model extends CI_Model{
     
     public function __construct(){
         parent::__construct();
@@ -26,6 +26,9 @@ class User_model extends CI_Model{
     public function getAll(){
         return $this->db->get('PEDIDO')->result_array();
     }  
+    public function getStock(){
+        return $this->db->get('STOCK')->result_array();
+    }
     public function getInputsByMealId($meal_id){
         $this->db->where('INSUMO_COMIDA_COMIDA_ID', $meal_id);
         return $this->db->get('INSUMO_COMIDA')->result_array();

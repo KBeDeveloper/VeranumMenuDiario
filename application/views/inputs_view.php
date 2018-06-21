@@ -180,7 +180,7 @@
 						</div>
 
 						<div class="row">
-							<table id="table-stock">
+							<table class="col" id="table-stock">
 								<thead>
 									<th>ID</th>
 									<th>Nombre</th>
@@ -194,7 +194,7 @@
 									<tr></tr>
 									<tr></tr>
 									<tr></tr>
-									
+
 								</tbody>
 							</table>
 						</div>
