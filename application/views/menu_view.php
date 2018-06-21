@@ -108,7 +108,7 @@
 					<?php foreach($listaD as $key=>$l){?>
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">						
 						<div class="text-blo3 size21 flex-col-l-m">
-							<a href="#" class="txt21 m-b-3">
+							<a href="<?=base_url().'index.php/Functionary_controller/stockFromMeal/'.$l['COMIDA_ID'];?>" class="txt21 m-b-3">
 								<?=$l['COMIDA_NOMBRE'] ?>
 							</a>
 
