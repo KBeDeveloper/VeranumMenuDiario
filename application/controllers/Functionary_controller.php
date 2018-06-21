@@ -10,11 +10,17 @@
             header('Access-Control-Allow-Origin: http://127.0.0.1/');
 		    header('Access-Control-Allow-Origin: htpp://localhost/');
             header('Access-Control-Allow-Credentials: true');
-            $stock_list['stock_list'] = $this->Order_model->getStock();
-		    $this->load->view('inputs_view', $stock_list);
+            $inputs['inputsFromStock'] = $this->Order_model->getStock();
+		    $this->load->view('inputs_view', $inputs);
         }
         public function stockFromMeal($meal_id){
-            
+            $inputs['inputsFromMeal'] = $this->Order_model->getInputsByMealId($meal_id);    
+            $inputs['inputsFromStock'] = [];
+            foreach($inputs['inputsFromMeal'] as $key => $im){
+               array_push($inputs['inputsFromStock'], $this->Order_model->getInputsFromStock($im['INSUMO_COMIDA_STOCK_ID']));
+            }
+            //echo json_encode($inputs['inputsFromStock']);
+            $this->load->view('inputs_view', $inputs);
         }
     }
 ?>

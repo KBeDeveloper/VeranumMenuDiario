@@ -165,12 +165,7 @@
 								</span>
 								<div class="wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23">
 									<input class="bo-rad-10 sizefull txt10 p-l-20" type="email" name="input-functionary-email" placeholder="Email">
-								</div>
-
-								<!-- Quantity -->	
-								<!--En el select se deberia desplegar las unidades segun los insumos-->
-								
-															
+								</div>															
 							</div>
 						</div>
 
@@ -187,15 +182,15 @@
 										</tr>									
 									</thead>
 									<tbody>								
-									<?php foreach($stock_list as $key=>$l){?>
-									<form id="form-stock-<?= $l['STOCK_ID']?>" method="get" action="#">
+									<?php foreach($inputsFromStock as $key=>$l){ echo
+									'<form id="form-stock-'.$l[0]['STOCK_ID'].'" method="get" action="#">
 										<tr>
-											<td><?= $l['STOCK_ID']?></td>
-											<td><?= $l['STOCK_NOMBRE']?></td>
-											<td><?= $l['STOCK_CANT_DISPONIBLE']?></td>
+											<td>'.$l[0]['STOCK_ID'].'</td>
+											<td>'.$l[0]['STOCK_NOMBRE'].'</td>
+											<td>'.$l[0]['STOCK_CANT_DISPONIBLE'].'</td>
 											<td>
 												<div class="col-md-8">
-													<input class="form-control" style="background-color: rgba(64,64,64,0.2);" type="text" id="" name="input-quantity">
+													<input class="form-control" style="background-color: rgba(64,64,64,0.2);" type="number" id="" name="input-quantity">
 												</div>
 											</td>
 											<td>
@@ -204,8 +199,8 @@
 												</div>											
 											</td>
 										</tr>
-									</form>
-									<?php }?>
+									</form>';
+									}?>
 									</tbody>
 								</table>
 							</div>

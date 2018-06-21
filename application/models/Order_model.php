@@ -33,7 +33,7 @@ class Order_model extends CI_Model{
         $this->db->where('INSUMO_COMIDA_COMIDA_ID', $meal_id);
         return $this->db->get('INSUMO_COMIDA')->result_array();
     }
-    public function getInputFromStock($input_id){
+    public function getInputsFromStock($input_id){
         $this->db->where('STOCK_ID', $input_id);
         return $this->db->get('STOCK')->result_array();
     }
