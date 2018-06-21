@@ -192,7 +192,7 @@
 													<td>'.$l[0]['STOCK_CANT_DISPONIBLE'].'</td>
 													<td>
 														<div class="col-md-8">
-															<input class="form-control" style="background-color: rgba(64,64,64,0.2);" type="number" id="" name="input-quantity" min="1" required>
+															<input class="form-control" style="background-color: rgba(64,64,64,0.2);" type="number" id="" name="input-quantity" min="1">
 														</div>
 													</td>
 													<td>
@@ -211,7 +211,7 @@
 													<td>'.$l['STOCK_CANT_DISPONIBLE'].'</td>
 													<td>
 														<div class="col-md-8">
-															<input class="form-control" style="background-color: rgba(64,64,64,0.2);" type="number" id="" name="input-quantity" min="1" required>
+															<input class="form-control" style="background-color: rgba(64,64,64,0.2);" type="number" id="" name="input-quantity" min="1">
 														</div>
 													</td>
 													<td>
