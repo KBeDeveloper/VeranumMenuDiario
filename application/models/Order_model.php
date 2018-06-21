@@ -38,14 +38,12 @@ class Order_model extends CI_Model{
         return $this->db->get('STOCK')->result_array();
     }
     public function getInputsDisponibility($meal_id){
-        $returnMessage = '';        
+        $returnMessage = null;
         $input_list['input_list'] = getInputByMealId($meal_id);
         foreach($input_list as $key => $il){
             $stock = getInputFromStock($il['INSUMO_COMIDA_ID']);
-            if($stock['STOCK_CANT_DISPONIBLE']>0){
-                $returnMessage .= '<p>El insumo de ID ['.$sl["STOCK_ID"].' ('.$sl["STOCK_NOMBRE"].')] tiene un stock de '.$sl["STOCK_CANT_DISPONIBLE"].'<p><br/>';
-            }else{
-                $returnMessage .= '<p>Falta el insumo de ID ['.$sl["STOCK_ID"].' ('.$sl["STOCK_NOMBRE"].')]<p><br/>';
+            if($stock['STOCK_CANT_DISPONIBLE']<=0){
+                $returnMessage .= 'Falta el insumo de ID ['.$sl["STOCK_ID"].' ('.$sl["STOCK_NOMBRE"].')]\n';
             }            
         }
         return $returnMessage;

@@ -188,14 +188,14 @@
 									</thead>
 									<tbody>								
 									<?php foreach($stock_list as $key=>$l){?>
-									<form id="form-stock-<?= $l['STOCK_ID']?>">
+									<form id="form-stock-<?= $l['STOCK_ID']?>" method="get" action="#">
 										<tr>
 											<td><?= $l['STOCK_ID']?></td>
 											<td><?= $l['STOCK_NOMBRE']?></td>
 											<td><?= $l['STOCK_CANT_DISPONIBLE']?></td>
 											<td>
 												<div class="col-md-8">
-													<input class="form-control" type="text" id="" name="input-quantity">
+													<input class="form-control" style="background-color: rgba(64,64,64,0.2);" type="text" id="" name="input-quantity">
 												</div>
 											</td>
 											<td>
