@@ -169,11 +169,14 @@
 							</div>
 						</div>
 						<!-- Button3 -->
-						<button type="submit" class="btn3 flex-c-m size13 txt11 trans-0-4">
+						<div class="row">
+						</div>
+						<div class="wrap-btn-booking flex-c-m m-t-6">							
+							<button type="submit" class="btn3 flex-c-m size13 txt11 trans-0-4">
 								Enviar Pedido
 							</button>
 						</div>
-					</form>
+						</form>
 
 						<div class="row">						
 							<div class="col-md">
@@ -233,15 +236,9 @@
 								</table>
 							</div>
 						</div>
-
-						<div class="wrap-btn-booking flex-c-m m-t-6">
-							
+					</div>						
 				</div>
 			</div>
-
-			
-
-
 	<!-- Back to top -->
 	<div class="btn-back-to-top bg0-hov" id="myBtn">
 		<span class="symbol-btn-back-to-top">
