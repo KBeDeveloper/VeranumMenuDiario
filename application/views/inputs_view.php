@@ -183,7 +183,7 @@
 									</thead>
 									<tbody>								
 									<?php foreach($inputsFromStock as $key=>$l){ echo
-									'<form id="form-stock-'.$l[0]['STOCK_ID'].'" method="get" action="#">
+									'<form id="form-stock'.$l[0]['STOCK_ID'].'" method="get" action="#">
 										<tr>
 											<td>'.$l[0]['STOCK_ID'].'</td>
 											<td>'.$l[0]['STOCK_NOMBRE'].'</td>
