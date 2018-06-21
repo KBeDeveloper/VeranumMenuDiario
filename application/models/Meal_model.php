@@ -43,7 +43,7 @@ class Meal_model extends CI_Model{
         return $this->db->get('STOCK')->result_array();
     }
 
-    public function queryInputs($meal_id){
+    public function getInputsDisponibility($meal_id){
         $returnMessage = '';        
         $input_list['input_list'] = getInputByMealId($meal_id);
         foreach($input_list as $key => $il){
