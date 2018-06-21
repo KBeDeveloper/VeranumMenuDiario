@@ -236,7 +236,18 @@
 		</div>
 	</section>
 	<!-- Sign up -->
-	
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-4">
+			</div>				
+			<div class="col-4">
+				<a class="btn3 form-control flex-c-m txt11 trans-0-1" href="/index.php/Functionary_controller" role="button">Consultar Insumos</a> 
+			</div>
+			<div class="col-4">
+			</div>	
+		</div>
+	</div>
+	<br>
 	<!-- Footer -->
 	<footer class="bg1">
 		<div class="container p-t-40 p-b-70">
