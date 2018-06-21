@@ -168,6 +168,12 @@
 								</div>															
 							</div>
 						</div>
+						<!-- Button3 -->
+						<button type="submit" class="btn3 flex-c-m size13 txt11 trans-0-4">
+								Enviar Pedido
+							</button>
+						</div>
+					</form>
 
 						<div class="row">						
 							<div class="col-md">
@@ -229,12 +235,7 @@
 						</div>
 
 						<div class="wrap-btn-booking flex-c-m m-t-6">
-							<!-- Button3 -->
-							<button type="submit" class="btn3 flex-c-m size13 txt11 trans-0-4">
-								Enviar Pedido
-							</button>
-						</div>
-					</form>
+							
 				</div>
 			</div>
 
