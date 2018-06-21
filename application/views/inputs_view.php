@@ -189,12 +189,13 @@
 									<th></th>									
 								</thead>
 								<tbody>
+								<?php foreach($stock_List as $key=>$l){?>
 									<tr></tr>
 									<tr></tr>
 									<tr></tr>
 									<tr></tr>
 									<tr></tr>
-									
+								<?php }?>
 								</tbody>
 							</table>
 						</div>
