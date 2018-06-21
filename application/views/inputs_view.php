@@ -190,16 +190,14 @@
 								</thead>
 								<tbody>
 								<?php foreach($stock_List as $key=>$l){?>
-									<tr></tr>
-									<tr></tr>
-									<tr></tr>
-									<tr></tr>
-									<tr></tr>
-<<<<<<< HEAD
-
-=======
+									<tr><?= $l['STOCK_ID']?></tr>
+									<tr><?= $l['STOCK_NOMBRE']?></tr>
+									<tr><?= $l['STOCK_CANT_DISPONIBLE']?></tr>
+									<tr><?php echo
+										'<input type="">;
+									?></tr>
+									<tr><a href=""></a><?= ?></tr>
 								<?php }?>
->>>>>>> 4436a34ae054ec79f58cad795bd7b6922acd4caa
 								</tbody>
 							</table>
 						</div>
