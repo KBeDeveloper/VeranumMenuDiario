@@ -103,7 +103,7 @@
 									Codigo Funcionario
 								</span>
 								<div class="wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-functionary-code" placeholder="Codigo">
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-functionary-code" placeholder="Codigo" required>
 								</div>
 								<!-- RUN -->
 								<span class="txt9">
@@ -111,7 +111,7 @@
 								</span>
 
 								<div class="wrap-inputphone size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-functionary-run" placeholder="Phone">
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-functionary-run" placeholder="Phone" required>
 								</div>
 								<!-- Date -->
 								<span class="txt9">
@@ -119,7 +119,7 @@
 								</span>
 
 								<div class="wrap-inputdate pos-relative txt10 size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="my-calendar bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-date">
+									<input class="my-calendar bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-date" required>
 									<i class="btn-calendar fa fa-calendar ab-r-m hov-pointer m-r-18" aria-hidden="true"></i>
 								</div>
 				
@@ -135,7 +135,7 @@
 								</span>
 
 								<div class="wrap-inputname size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-functionary-name" placeholder="Nombre">
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-functionary-name" placeholder="Nombre" required>
 								</div>
 
 								<!-- DV  -->
@@ -144,7 +144,7 @@
 								</span>
 								<div class="wrap-inputpeople size12 bo2 bo-rad-10 m-t-3 m-b-23">
 									<!-- Select3 -->
-									<select class="selection-1" name="select-dv">
+									<select class="selection-1" name="select-dv" required>
 										<option value="0">0</option>
 										<option selected value="1">1</option>
 										<option value="2">2</option>
@@ -164,7 +164,7 @@
 									Correo electrónico
 								</span>
 								<div class="wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="bo-rad-10 sizefull txt10 p-l-20" type="email" name="input-functionary-email" placeholder="Email">
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="email" name="input-functionary-email" placeholder="Email" required>
 								</div>															
 							</div>
 						</div>
@@ -192,7 +192,7 @@
 													<td>'.$l[0]['STOCK_CANT_DISPONIBLE'].'</td>
 													<td>
 														<div class="col-md-8">
-															<input class="form-control" style="background-color: rgba(64,64,64,0.2);" type="number" id="" name="input-quantity" min="1">
+															<input class="form-control" style="background-color: rgba(64,64,64,0.2);" type="number" id="" name="input-quantity" min="1" required>
 														</div>
 													</td>
 													<td>
@@ -211,7 +211,7 @@
 													<td>'.$l['STOCK_CANT_DISPONIBLE'].'</td>
 													<td>
 														<div class="col-md-8">
-															<input class="form-control" style="background-color: rgba(64,64,64,0.2);" type="number" id="" name="input-quantity" min="1">
+															<input class="form-control" style="background-color: rgba(64,64,64,0.2);" type="number" id="" name="input-quantity" min="1" required>
 														</div>
 													</td>
 													<td>
