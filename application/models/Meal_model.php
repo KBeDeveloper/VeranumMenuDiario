@@ -32,29 +32,5 @@ class Meal_model extends CI_Model{
         $this->db->where('COMIDA_TIPO',$meal_type);
         return $this->db->get('COMIDA')->result_array();
     }
-
-    public function getInputsByMealId($meal_id){
-        $this->db->where('INSUMO_COMIDA_COMIDA_ID', $meal_id);
-        return $this->db->get('INSUMO_COMIDA')->result_array();
-    }
-
-    public function getInputFromStock($input_id){
-        $this->db->where('STOCK_ID', $input_id);
-        return $this->db->get('STOCK')->result_array();
-    }
-
-    public function getInputsDisponibility($meal_id){
-        $returnMessage = '';        
-        $input_list['input_list'] = getInputByMealId($meal_id);
-        foreach($input_list as $key => $il){
-            $stock = getInputFromStock($il['INSUMO_COMIDA_ID']);
-            if($stock['STOCK_CANT_DISPONIBLE']>0){
-                $returnMessage .= '<p>El insumo de ID ['.$sl["STOCK_ID"].' ('.$sl["STOCK_NOMBRE"].')] tiene un stock de '.$sl["STOCK_CANT_DISPONIBLE"].'<p><br/>';
-            }else{
-                $returnMessage .= '<p>Falta el insumo de ID ['.$sl["STOCK_ID"].' ('.$sl["STOCK_NOMBRE"].')]<p><br/>';
-            }
-            return $returnMessage;
-        }
-    }
 }
 ?>
