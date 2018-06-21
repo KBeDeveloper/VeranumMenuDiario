@@ -43,9 +43,9 @@ class User_model extends CI_Model{
                 $returnMessage .= '<p>El insumo de ID ['.$sl["STOCK_ID"].' ('.$sl["STOCK_NOMBRE"].')] tiene un stock de '.$sl["STOCK_CANT_DISPONIBLE"].'<p><br/>';
             }else{
                 $returnMessage .= '<p>Falta el insumo de ID ['.$sl["STOCK_ID"].' ('.$sl["STOCK_NOMBRE"].')]<p><br/>';
-            }
-            return $returnMessage;
+            }            
         }
+        return $returnMessage;
     }
 }
 ?>
