@@ -189,12 +189,17 @@
 									<th></th>									
 								</thead>
 								<tbody>
+								<?php foreach($stock_List as $key=>$l){?>
 									<tr></tr>
 									<tr></tr>
 									<tr></tr>
 									<tr></tr>
 									<tr></tr>
+<<<<<<< HEAD
 
+=======
+								<?php }?>
+>>>>>>> 4436a34ae054ec79f58cad795bd7b6922acd4caa
 								</tbody>
 							</table>
 						</div>
