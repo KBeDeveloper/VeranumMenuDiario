@@ -92,7 +92,7 @@
 						</div>
 
 						<div class="contact100-form-range-bar">
-							<div id="filter-bar"></div>
+							<div id="filter-bar"><!-- Holi--></div>
 						</div>
 					</div>
 				</div>
