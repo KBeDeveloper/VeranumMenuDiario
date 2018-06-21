@@ -36,7 +36,11 @@
 <!--===============================================================================================-->
 </head>
 <body class="animsition">
-
+	<script>
+		$(document).ready( function () {
+			$('#table-stock').DataTable();
+		});
+	</script>
 	<!-- Header -->
 	<header>
 		<!-- Header desktop -->
@@ -173,6 +177,26 @@
 								
 															
 							</div>
+						</div>
+
+						<div class="row">
+							<table id="table-stock">
+								<thead>
+									<th>ID</th>
+									<th>Nombre</th>
+									<th>Cantidad Disponible</th>
+									<th>Cantidad a solicitar</th>
+									<th></th>									
+								</thead>
+								<tbody>
+									<tr></tr>
+									<tr></tr>
+									<tr></tr>
+									<tr></tr>
+									<tr></tr>
+									
+								</tbody>
+							</table>
 						</div>
 
 						<div class="wrap-btn-booking flex-c-m m-t-6">
