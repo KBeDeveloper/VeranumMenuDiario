@@ -29,18 +29,13 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/vendor/lightbox2/css/lightbox.min.css">
 <!--===============================================================================================-->
-    <script type="text/javascript" src="<?= base_url();?>assets/js/jquery.dataTables.min.js"></script>
+    <script defer type="text/javascript" src="<?= base_url();?>assets/js/jquery.dataTables.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/css/jquery.dataTables.min.css">
 	<link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/css/util.css">
 	<link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/css/main.css">
 <!--===============================================================================================-->
 </head>
-<body class="animsition">
-	<script>
-		$(document).ready( function () {
-			$('#table-stock').DataTable();
-		});
-	</script>
+<body class="animsition">	
 	<!-- Header -->
 	<header>
 		<!-- Header desktop -->
@@ -179,41 +174,40 @@
 							</div>
 						</div>
 
-						<div class="row">
-						<div class="col-md-2">
-						</div>
-							<table class="col-md-8" id="table-stock">
-								<thead>
-									<tr>
-										<th>ID</th>
-										<th>Nombre</th>
-										<th>Cantidad Disponible</th>
-										<th>Cantidad a solicitar</th>
-										<th></th>
-									</tr>									
-								</thead>
-								<tbody>
-								<?php foreach($stock_list as $key=>$l){?>
-									<tr>
-										<td><?= $l['STOCK_ID']?></td>
-										<td><?= $l['STOCK_NOMBRE']?></td>
-										<td><?= $l['STOCK_CANT_DISPONIBLE']?></td>
-										<td>
-											<div class="col-md-8">
-												<input class="form-control" type="text" id="" name="input-quantity">
-											</div>
-										</td>
-										<td>
-											<div class="col-md-4">
-												<a class="btn3 flex-c-m size13 txt11 trans-0-4" href="#" role="button">Agregar</a> 
-											</div>
-											
-										</td>
-									</tr>
-								<?php }?>
-								</tbody>
-							</table>
-							<div class="col-md-2">
+						<div class="row">						
+							<div class="col-md">
+								<table id="table-stock">
+									<thead>
+										<tr>
+											<th>ID</th>
+											<th>Nombre</th>
+											<th>Cantidad Disponible</th>
+											<th>Cantidad a solicitar</th>
+											<th></th>
+										</tr>									
+									</thead>
+									<tbody>								
+									<?php foreach($stock_list as $key=>$l){?>
+									<form id="form-stock-<?= $l['STOCK_ID']?>">
+										<tr>
+											<td><?= $l['STOCK_ID']?></td>
+											<td><?= $l['STOCK_NOMBRE']?></td>
+											<td><?= $l['STOCK_CANT_DISPONIBLE']?></td>
+											<td>
+												<div class="col-md-8">
+													<input class="form-control" type="text" id="" name="input-quantity">
+												</div>
+											</td>
+											<td>
+												<div class="col-md-4">
+													<button class="btn3 form-control size13 flex-c-m txt11 trans-0-4" type="submit">Agregar</button> 
+												</div>											
+											</td>
+										</tr>
+									</form>
+									<?php }?>
+									</tbody>
+								</table>
 							</div>
 						</div>
 
