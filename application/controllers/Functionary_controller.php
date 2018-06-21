@@ -13,7 +13,7 @@
             $stock_list['stock_list'] = $this->Order_model->getStock();
 		    $this->load->view('inputs_view', $stock_list);
         }
-        public function stockFromMeal(){
+        public function stockFromMeal($meal_id){
             
         }
     }

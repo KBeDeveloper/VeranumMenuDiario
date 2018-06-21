@@ -44,7 +44,7 @@ class Order_model extends CI_Model{
             $stock = getInputFromStock($il['INSUMO_COMIDA_ID']);
             if($stock['STOCK_CANT_DISPONIBLE']<=0){
                 $returnMessage .= 'Falta el insumo de ID ['.$sl["STOCK_ID"].' ('.$sl["STOCK_NOMBRE"].')]\n';
-            }            
+            }
         }
         return $returnMessage;
     }
