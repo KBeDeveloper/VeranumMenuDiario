@@ -231,7 +231,7 @@
 													</td>
 													<td>
 														<div class="col-md-4">
-															<button class="btn3 form-control size13 flex-c-m txt11 trans-0-4 >Agregar</button> 
+															<button type="submit" class="btn3 form-control size13 flex-c-m txt11 trans-0-4">Agregar</button> 
 														</div>											
 													</td>
 												</tr>
