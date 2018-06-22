@@ -181,8 +181,7 @@
 										<tr>
 											<th>ID</th>
 											<th>NOMBRE</th>
-											<th>CANTIDAD SOLICITADA</th>		
-											<th>ACCION</th>
+											<th>CANTIDAD SOLICITADA</th>
 										</tr>
 									</thead>
 									<tbody id="tbody-inputs">
@@ -235,23 +234,23 @@
 											</form>';
 										}else{
 											echo
-											'<!--form id="form-stock-'.$l['STOCK_ID'].'" method="post" action="#"-->
+											'<form id="form-stock-'.$l['STOCK_ID'].'" method="post" action="#">
 												<tr>
 													<td>'.$l['STOCK_ID'].'</td>
 													<td>'.$l['STOCK_NOMBRE'].'</td>
 													<td>'.$l['STOCK_CANT_DISPONIBLE'].'</td>
 													<td>
 														<div class="col-md-8">
-															<input class="form-control" style="background-color: rgba(64,64,64,0.2);" type="number" id="" name="input-quantity" min="1">
+															<input class="form-control" style="background-color: rgba(64,64,64,0.2);" type="number" value="1" name="input-quantity" min="1">
 														</div>
 													</td>
 													<td>
 														<div class="col-md-4">
-															<button class="btn3 form-control size13 flex-c-m txt11 trans-0-4" >Agregar</button> 
+															<button type="submit" class="btn3 form-control size13 flex-c-m txt11 trans-0-4" onClick="fillInputTable(\''.$l['STOCK_ID'].'\',\''.$l['STOCK_NOMBRE'].'\',\'numericValue\')">Agregar</button> 
 														</div>											
 													</td>
 												</tr>
-											<!--/form-->';
+											</form>';
 										}									
 									}?>
 									</tbody>
@@ -299,9 +298,24 @@
 
 <script>
 $(document).ready( function () {
-    $('#table-stock').DataTable();
+	$('#table-stock').DataTable();
+	$('#table-order-inputs').DataTable();
 } );
 </script>
+<<<<<<< HEAD
+=======
+<script>
+function fillInputTable(id, name, quantity){
+    $('#tbody-inputs').append(
+        '<tr>',
+            '<td>'+id+'<input name="input-id-'+id+'"type="text" hidden></td>',
+            '<td>'+name+'</td>',
+			'<td>'+quantity+'<input name="input-quantity-'+id+'" type="text" hidden></td>', 
+			           
+		'</tr>');		
+};
+</script>
+>>>>>>> 51a056b1fb8f1ec80a1edf9561e02dd30de033af
 <!--?=$insumoPedido['insumoPedido'] = [];
              array_push($insumoPedido['insumoPedido'],["INSUMO_PEDIDO_STOCK_ID" =>$this->input->post('input-id'),"INSUMO_PEDIDO_CANTIDAD" => $this->input->post('username')];  ?-->
 </body>
