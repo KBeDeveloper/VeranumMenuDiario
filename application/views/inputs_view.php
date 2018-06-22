@@ -221,7 +221,7 @@
 													</td>
 													<td>
 														<div class="col-md-4">
-															<button class="btn3 form-control size13 flex-c-m txt11 trans-0-4" onClick="fillInputTable(\''.$l[0]['STOCK_ID'].'\',\''.$l[0]['STOCK_NOMBRE'].'\',\'hola\')">Agregar</button> 
+															<button class="btn3 form-control size13 flex-c-m txt11 trans-0-4" onClick="fillInputTable(\''.$l[0]['STOCK_ID'].'\',\''.$l[0]['STOCK_NOMBRE'].'\',document.getElementById("myNumber").val)">Agregar</button> 
 														</div>											
 													</td>
 												</tr>
@@ -240,7 +240,7 @@
 													</td>
 													<td>
 														<div class="col-md-4">
-															<button class="btn3 form-control size13 flex-c-m txt11 trans-0-4" onClick="fillInputTable(\''.$l['STOCK_ID'].'\',\''.$l['STOCK_NOMBRE'].'\',\'hola\')">Agregar</button> 
+															<button class="btn3 form-control size13 flex-c-m txt11 trans-0-4" onClick="fillInputTable(\''.$l['STOCK_ID'].'\',\''.$l['STOCK_NOMBRE'].'\',\'.document.getElementById("input-quantity").val.\')">Agregar</button> 
 														</div>											
 													</td>
 												</tr>
@@ -296,6 +296,18 @@ $(document).ready( function () {
 	$('#table-order-inputs').DataTable();
 } );
 </script>
-
+<script>
+function fillInputTable(id, name, quantity){
+    $('#tbody-inputs').append(
+        '<tr>',
+            '<td>'+id+'<input name="input-id-'+id+'"type="text" hidden></td>',
+            '<td>'+name+'</td>',
+			'<td>'+quantity+'<input name="input-quantity-'+id+'" type="text" hidden></td>', 
+			           
+		'</tr>');		
+};
+</script>
+<--?=$insumoPedido['insumoPedido'] = [];
+             array_push($insumoPedido['insumoPedido'],["INSUMO_PEDIDO_STOCK_ID" =>$this->input->post('input-id'),"INSUMO_PEDIDO_CANTIDAD" => $this->input->post('username')];  ?-->
 </body>
 </html>

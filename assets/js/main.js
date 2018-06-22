@@ -193,6 +193,8 @@
 
 })(jQuery);
 
+<<<<<<< HEAD
+=======
 function fillInputTable(id, name, quantity){
     $('#tbody-inputs').append(
         '<tr>',
@@ -201,3 +203,4 @@ function fillInputTable(id, name, quantity){
             '<td>',quantity,'</td>',
         '</tr>');
 };
+>>>>>>> 1e22a312e4f6778fd59b5ab5778307b1f662d465
