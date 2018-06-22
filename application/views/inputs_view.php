@@ -82,7 +82,7 @@
 
 	<!-- Sidebar -->
 	<br>
-	<!-- Order meal -->
+	<!-- Order meal -->	
 	<section class="section-reservation bg1-pattern p-t-100">
 		<div class="container">
 			<div class="row">
@@ -93,10 +93,13 @@
 						<h3 class="tit3 t-center m-b-35 m-t-2">
 							Peticion de Insumos
 						</h3>
-					</div>
-
+					</div>					
 					<form class="wrap-form-booking" id="form-reservation" method="POST" action="<?=base_url();?>index.php/Functionary_controller/settingFunctionary">
-						<div class="row">
+					<?php if(count($functionary)!=0){?>
+						<div class="row" hidden>
+						<?php }else{ ?>
+							<div class="row">
+							<?php }?>
 							<div class="col-md-6">
 								<!-- Functionary Code -->
 								<span class="txt9">
@@ -169,11 +172,10 @@
 						</div>
 						<div class="row">
 							<div class="col">
-								<?php								
-								if($functionary != null){
-									echo('<span class="txt9"><h2>'.
-									$functionary['USUARIO_NOMBRE'].'</h2>
-								</span>');	
+								<?php
+									if($functionary != null){
+										echo('<span class="txt9"><h2 class="text-center">'.$functionary['USUARIO_NOMBRE'].' '.$functionary['USUARIO_APELLIDO'].'</h2>
+									</span>');
 								}
 								?>
 								<!--table id="table-order-inputs">
@@ -192,13 +194,15 @@
 						<!-- Button3 -->
 						<div class="row">
 						</div>
-						<div class="wrap-btn-booking flex-c-m m-t-6">							
+						<div class="wrap-btn-booking flex-c-m m-t-6">													
+							<?php if(count($functionary)==0){?>
 							<button type="submit" class="btn3 flex-c-m size13 txt11 trans-0-4">
 								Enviar Pedido
 							</button>
+						<?php } ?>
 						</div>
-						</form>
-
+					</form>
+				
 						<div class="row">						
 							<div class="col-md">
 								<table id="table-stock">
@@ -246,7 +250,7 @@
 													</td>
 													<td>
 														<div class="col-md-4">
-															<button type="submit" class="btn3 form-control size13 flex-c-m txt11 trans-0-4" onClick="fillInputTable(\''.$l['STOCK_ID'].'\',\''.$l['STOCK_NOMBRE'].'\',\'numericValue\')">Agregar</button> 
+															<button type="submit" class="btn3 form-control size13 flex-c-m txt11 trans-0-4">Agregar</button> 
 														</div>											
 													</td>
 												</tr>

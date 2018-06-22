@@ -20,6 +20,7 @@
             $inputs['inputsFromMeal'] = $this->Order_model->getInputsByMealId($meal_id);    
             $inputs['inputsFromStock'] = [];
             $inputs['default'] = 0;
+            $inputs['functionary'] = [];
             foreach($inputs['inputsFromMeal'] as $key => $im){
                array_push($inputs['inputsFromStock'], $this->Order_model->getInputsFromStock($im['INSUMO_COMIDA_STOCK_ID']));
             }
