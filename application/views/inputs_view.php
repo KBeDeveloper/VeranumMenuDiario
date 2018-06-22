@@ -95,32 +95,31 @@
 						</h3>
 					</div>
 
-					<form class="wrap-form-booking" id="form-reservation" method="POST" action="<?=base_url();?>index.php/User_controller">
+					<form class="wrap-form-booking" id="form-reservation" method="POST" action="<?=base_url();?>index.php/Functionary_controller/settingFunctionary">
 						<div class="row">
 							<div class="col-md-6">
 								<!-- Functionary Code -->
 								<span class="txt9">
-									Codigo Funcionario
+									RUN
 								</span>
 								<div class="wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-functionary-code" placeholder="Codigo" required>
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-functionary-run" placeholder="RUN" required>
 								</div>
 								<!-- RUN -->
 								<span class="txt9">
-									RUN
+									Phone
 								</span>
 
 								<div class="wrap-inputphone size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-functionary-run" placeholder="Phone" required>
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-functionary-phone" placeholder="Phone" required>
 								</div>
 								<!-- Date -->
 								<span class="txt9">
-									Fecha
+									Nombre
 								</span>
 
 								<div class="wrap-inputdate pos-relative txt10 size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="my-calendar bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-date" required>
-									<i class="btn-calendar fa fa-calendar ab-r-m hov-pointer m-r-18" aria-hidden="true"></i>
+								<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-functionary-name" placeholder="Nombre" required>
 								</div>
 				
 								<!-- Order -->
@@ -131,11 +130,11 @@
 							<div class="col-md-6">
 								<!-- Name -->
 								<span class="txt9">
-									Nombre 
+									Correo electrónico
 								</span>
 
 								<div class="wrap-inputname size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-functionary-name" placeholder="Nombre" required>
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-functionary-mail" placeholder="tuemail@email.algo" required>
 								</div>
 
 								<!-- DV  -->
@@ -161,16 +160,23 @@
 								
 								<!-- Email -->
 								<span class="txt9">
-									Correo electrónico
+									 Apellido
 								</span>
 								<div class="wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="bo-rad-10 sizefull txt10 p-l-20" type="email" name="input-functionary-email" placeholder="Email" required>
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-functionary-lastname" placeholder="apellido" required>
 								</div>															
 							</div>
 						</div>
 						<div class="row">
 							<div class="col">
-								<table id="table-order-inputs">
+								<?php								
+								if($functionary != null){
+									echo('<span class="txt9">'.
+									$functionary['USUARIO_NOMBRE'].'
+								</span>');	
+								}
+								?>
+								<!--table id="table-order-inputs">
 									<thead>
 										<tr>
 											<th>ID</th>
@@ -181,7 +187,7 @@
 									</thead>
 									<tbody id="tbody-inputs">
 									</tbody>									
-								</table>
+								</table-->
 							</div>
 						</div>
 						<!-- Button3 -->
@@ -222,7 +228,7 @@
 													</td>
 													<td>
 														<div class="col-md-4">
-															<button class="btn3 form-control size13 flex-c-m txt11 trans-0-4" onClick="fillInputTable(\''.$l[0]['STOCK_ID'].'\',\''.$l[0]['STOCK_NOMBRE'].'\',document.getElementById("myNumber").val)">Agregar</button> 
+															<button class="btn3 form-control size13 flex-c-m txt11 trans-0-4 >Agregar</button> 
 														</div>											
 													</td>
 												</tr>
@@ -241,7 +247,7 @@
 													</td>
 													<td>
 														<div class="col-md-4">
-															<button class="btn3 form-control size13 flex-c-m txt11 trans-0-4" onClick="fillInputTable(\''.$l['STOCK_ID'].'\',\''.$l['STOCK_NOMBRE'].'\',\'.document.getElementById("input-quantity").val.\')">Agregar</button> 
+															<button class="btn3 form-control size13 flex-c-m txt11 trans-0-4" >Agregar</button> 
 														</div>											
 													</td>
 												</tr>
@@ -296,18 +302,7 @@ $(document).ready( function () {
     $('#table-stock').DataTable();
 } );
 </script>
-<script>
-function fillInputTable(id, name, quantity){
-    $('#tbody-inputs').append(
-        '<tr>',
-            '<td>'+id+'<input name="input-id-'+id+'"type="text" hidden></td>',
-            '<td>'+name+'</td>',
-			'<td>'+quantity+'<input name="input-quantity-'+id+'" type="text" hidden></td>', 
-			           
-		'</tr>');		
-};
-</script>
-<--?=$insumoPedido['insumoPedido'] = [];
+<!--?=$insumoPedido['insumoPedido'] = [];
              array_push($insumoPedido['insumoPedido'],["INSUMO_PEDIDO_STOCK_ID" =>$this->input->post('input-id'),"INSUMO_PEDIDO_CANTIDAD" => $this->input->post('username')];  ?-->
 </body>
 </html>
