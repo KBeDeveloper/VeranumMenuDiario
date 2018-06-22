@@ -199,5 +199,5 @@ function fillInputTable(id, name, quantity){
             '<td>',id,'</td>',
             '<td>',name,'</td>',
             '<td>',quantity,'</td>',
-        '</tr>');    
+        '</tr>');
 };
