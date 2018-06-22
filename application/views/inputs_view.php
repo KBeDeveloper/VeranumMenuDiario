@@ -172,11 +172,10 @@
 						</div>
 						<div class="row">
 							<div class="col">
-								<?php								
-								if($functionary != null){
-									echo('<span class="txt9"><h2>'.
-									$functionary['USUARIO_NOMBRE'].'</h2>
-								</span>');	
+								<?php
+									if($functionary != null){
+										echo('<span class="txt9"><h2 class="text-center">'.$functionary['USUARIO_NOMBRE'].' '.$functionary['USUARIO_APELLIDO'].'</h2>
+									</span>');
 								}
 								?>
 								<!--table id="table-order-inputs">
@@ -251,7 +250,7 @@
 													</td>
 													<td>
 														<div class="col-md-4">
-															<button type="submit" class="btn3 form-control size13 flex-c-m txt11 trans-0-4" onClick="fillInputTable(\''.$l['STOCK_ID'].'\',\''.$l['STOCK_NOMBRE'].'\',\'numericValue\')">Agregar</button> 
+															<button type="submit" class="btn3 form-control size13 flex-c-m txt11 trans-0-4">Agregar</button> 
 														</div>											
 													</td>
 												</tr>
