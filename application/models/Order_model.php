@@ -48,5 +48,8 @@ class Order_model extends CI_Model{
         }
         return $returnMessage;
     }
+    public function createInput($input){
+        return $this->db->insert('INSUMO_PEDIDO', $input);
+    }
 }
 ?>

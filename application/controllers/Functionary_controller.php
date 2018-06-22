@@ -30,14 +30,20 @@
         }
         public function settingFunctionary(){
             $inputs['functionary'] = [
-                "USUARIO_RUN" => $this->input->post("input-functionary-run"),
-                "USUARIO_CORREO" => $this->input->post("input-functionary-mail"),
+                "USUARIO_RUN"      => $this->input->post("input-functionary-run"),
+                "USUARIO_CORREO"   => $this->input->post("input-functionary-mail"),
                 "USUARIO_TELEFONO" => $this->input->post("input-functionary-phone"),
-                "USUARIO_DV"          => $_POST['select-dv'],
-                "USUARIO_NOMBRE" => $this->input->post("input-functionary-name"),
+                "USUARIO_DV"       => $_POST['select-dv'],
+                "USUARIO_NOMBRE"   => $this->input->post("input-functionary-name"),
                 "USUARIO_APELLIDO" => $this->input->post("input-functionary-lastname"),
-                "USUARIO_TIPO" => 1
-            ];                                    
+                "USUARIO_TIPO"     => 1
+            ];     
+            $order = [
+                "PEDIDO_FUNCIONARIO_RUN" => $inputs['functionary']['USUARIO_RUN']
+            ];
+            $order_info = $this->Order_model->create($order);
+            echo $order_info;
+            $this->session->order_info = $order_info;
             if(count($this->User_model->read($inputs['functionary']['USUARIO_RUN']) == 0)){
                 $this->User_model->create($inputs['functionary']);
             }
@@ -47,6 +53,17 @@
             $inputs['inputsFromStock'] = $this->Order_model->getStock();
             $inputs['default'] = 1;
 		   $this->load->view('inputs_view', $inputs);
+        }
+        public function addInput($id){
+            if(count($this->session->fun)>0){
+                $input_data = [
+                    "INSUMO_PEDIDO_CANTIDAD"  => $this->input->post('input-quantity'),
+                    "INSUMO_PEDIDO_STOCK_ID"  => $id,
+                    "INSUMO_PEDIDO_PEDIDO_ID" => 
+                ];
+                $this->Order_model->createInput($input_data);
+            }
+            redirect('/Functionary_controller', 'refresh');
         }
     }
 ?>

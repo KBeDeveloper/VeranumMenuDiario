@@ -219,7 +219,7 @@
 									<?php foreach($inputsFromStock as $key=>$l){										
 										if($default==0){
 											echo
-											'<form id="form-stock-'.$l[0]['STOCK_ID'].'" method="get">
+											'<form id="form-stock-'.$l[0]['STOCK_ID'].'" method="post" action="<?=base_url();?>index.php/FunctionaryController/addInput/'.$l[0]['STOCK_ID'].'">
 												<tr>
 													<td>'.$l[0]['STOCK_ID'].'</td>
 													<td>'.$l[0]['STOCK_NOMBRE'].'</td>
@@ -238,7 +238,7 @@
 											</form>';
 										}else{
 											echo
-											'<form id="form-stock-'.$l['STOCK_ID'].'" method="post" action="#">
+											'<form id="form-stock-'.$l['STOCK_ID'].'" method="post" action="<?=base_url();?>index.php/FunctionaryController/addInput/'.$l['STOCK_ID'].'">
 												<tr>
 													<td>'.$l['STOCK_ID'].'</td>
 													<td>'.$l['STOCK_NOMBRE'].'</td>
