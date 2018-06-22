@@ -225,6 +225,7 @@
 													<td>'.$l[0]['STOCK_NOMBRE'].'</td>
 													<td>'.$l[0]['STOCK_CANT_DISPONIBLE'].'</td>
 													<td>
+													<input name="input-order-id" type="text" value="'.$order_id.'" hidden>
 														<div class="col-md-8">
 															<input class="form-control" style="background-color: rgba(64,64,64,0.2);" type="number" id="" name="input-quantity" min="1">
 														</div>
@@ -244,6 +245,7 @@
 													<td>'.$l['STOCK_NOMBRE'].'</td>
 													<td>'.$l['STOCK_CANT_DISPONIBLE'].'</td>
 													<td>
+													<input name="input-order-id" type="text" value="'.$order_id.'" hidden>
 														<div class="col-md-8">
 															<input class="form-control" style="background-color: rgba(64,64,64,0.2);" type="number" value="1" name="input-quantity" min="1">
 														</div>

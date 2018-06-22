@@ -14,6 +14,7 @@
             $inputs['inputsFromStock'] = $this->Order_model->getStock();
             $inputs['default'] = 1;
             $inputs['functionary'] = [];
+            $inputs['order_id'] = "";
             $this->load->view('inputs_view', $inputs);
             
         }
@@ -22,6 +23,7 @@
             $inputs['inputsFromStock'] = [];
             $inputs['default'] = 0;
             $inputs['functionary'] = [];
+            $inputs['order_id'] = "";
             foreach($inputs['inputsFromMeal'] as $key => $im){
                array_push($inputs['inputsFromStock'], $this->Order_model->getInputsFromStock($im['INSUMO_COMIDA_STOCK_ID']));
             }
@@ -46,9 +48,9 @@
                 "PEDIDO_FUNCIONARIO_RUN" => $inputs['functionary']['USUARIO_RUN']
             ];
             $this->Order_model->create($order);
-            $order_info = $this->Order_model->read($order['PEDIDO_FUNCIONARIO_RUN']);
+            $order_info = $this->Order_model->read($order['PEDIDO_FUNCIONARIO_RUN']);            
             $ind = count($this->Order_model->read($order['PEDIDO_FUNCIONARIO_RUN']));
-            $this->session->order_id = $order_info[$ind]['PEDIDO_ID'];
+            $inputs['order_id'] = $order_info[$ind-1]['PEDIDO_ID'];
             header('Access-Control-Allow-Origin: http://127.0.0.1/');
 		    header('Access-Control-Allow-Origin: htpp://localhost/');
             header('Access-Control-Allow-Credentials: true');
@@ -61,7 +63,7 @@
                 $input_data = [
                     "INSUMO_PEDIDO_CANTIDAD"  => $this->input->post('input-quantity'),
                     "INSUMO_PEDIDO_STOCK_ID"  => $id,
-                    "INSUMO_PEDIDO_PEDIDO_ID" => $this->session->order_id
+                    "INSUMO_PEDIDO_PEDIDO_ID" => $this->input->post('input-order-id')
                 ];
                 $this->Order_model->createInput($input_data);
             }
