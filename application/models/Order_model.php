@@ -12,7 +12,7 @@ class Order_model extends CI_Model{
         return $this->db->insert('PEDIDO', $order);
     }
     public function read($order_user_run){
-        $this->db->where('PEDIDO_USUARIO_RUN', $order_user_run);
+        $this->db->where('PEDIDO_FUNCIONARIO_RUN', $order_user_run);
         return $this->db->get('PEDIDO')->result_array();
     }
     public function update($order_id, $order_data){
