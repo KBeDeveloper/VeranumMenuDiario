@@ -5,6 +5,7 @@
         public function __construct(){
             parent::__construct();
             $this->load->model('Order_model');
+            $this->load->model('User_model');
         }
         public function index(){            
             header('Access-Control-Allow-Origin: http://127.0.0.1/');
@@ -29,20 +30,23 @@
         }
         public function settingFunctionary(){
             $inputs['functionary'] = [
-                "USUARIO_RUN " => $this->input->post("input-functionary-run"),
+                "USUARIO_RUN" => $this->input->post("input-functionary-run"),
                 "USUARIO_CORREO" => $this->input->post("input-functionary-mail"),
                 "USUARIO_TELEFONO" => $this->input->post("input-functionary-phone"),
                 "USUARIO_DV"          => $_POST['select-dv'],
                 "USUARIO_NOMBRE" => $this->input->post("input-functionary-name"),
                 "USUARIO_APELLIDO" => $this->input->post("input-functionary-lastname"),
                 "USUARIO_TIPO" => 1
-            ];            
+            ];                                    
+            if(count($this->User_model->read($inputs['functionary']['USUARIO_RUN']) == 0)){
+                $this->User_model->create($inputs['functionary']);
+            }
             header('Access-Control-Allow-Origin: http://127.0.0.1/');
 		    header('Access-Control-Allow-Origin: htpp://localhost/');
             header('Access-Control-Allow-Credentials: true');
             $inputs['inputsFromStock'] = $this->Order_model->getStock();
             $inputs['default'] = 1;
-		   $this->load->view('inputs_view', $inputs);            
+		   $this->load->view('inputs_view', $inputs);
         }
     }
 ?>
