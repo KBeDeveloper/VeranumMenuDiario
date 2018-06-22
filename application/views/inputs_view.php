@@ -175,8 +175,7 @@
 										<tr>
 											<th>ID</th>
 											<th>NOMBRE</th>
-											<th>CANTIDAD SOLICITADA</th>		
-											<th>ACCION</th>
+											<th>CANTIDAD SOLICITADA</th>
 										</tr>
 									</thead>
 									<tbody id="tbody-inputs">
@@ -293,7 +292,8 @@
 
 <script>
 $(document).ready( function () {
-    $('#table-stock').DataTable();
+	$('#table-stock').DataTable();
+	$('#table-order-inputs').DataTable();
 } );
 </script>
 
