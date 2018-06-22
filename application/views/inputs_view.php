@@ -307,7 +307,7 @@ function fillInputTable(id, name, quantity){
 		'</tr>');		
 };
 </script>
-<--?=$insumoPedido['insumoPedido'] = [];
+<!--?=$insumoPedido['insumoPedido'] = [];
              array_push($insumoPedido['insumoPedido'],["INSUMO_PEDIDO_STOCK_ID" =>$this->input->post('input-id'),"INSUMO_PEDIDO_CANTIDAD" => $this->input->post('username')];  ?-->
 </body>
 </html>
