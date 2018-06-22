@@ -117,7 +117,7 @@
 									RUN
 								</span>
 								<div class="wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-run" placeholder="run" required>
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-run" placeholder="run" maxlength="8" required>
 								</div>
 								<!-- Date -->
 								<span class="txt9">
@@ -211,7 +211,7 @@
 								</span>
 
 								<div class="wrap-inputname size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-name" placeholder="Nombre" required>
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-name" placeholder="Nombre" maxlength="80" required>
 								</div>
 
 								<!-- Phone -->
@@ -220,7 +220,7 @@
 								</span>
 
 								<div class="wrap-inputphone size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-phone" placeholder="Phone" required>
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-phone" placeholder="Phone" maxlength="18" required>
 								</div>
 
 								<!-- Email -->
@@ -228,7 +228,7 @@
 									Correo electrónico
 								</span>
 								<div class="wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="bo-rad-10 sizefull txt10 p-l-20" type="email" name="input-email" placeholder="Email" required>
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="email" name="input-email" placeholder="Email" maxlength="300" required>
 								</div>
 															
 							</div>

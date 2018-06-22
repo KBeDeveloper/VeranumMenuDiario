@@ -106,7 +106,7 @@
 									RUN
 								</span>
 								<div class="wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-functionary-run" placeholder="RUN" required>
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-functionary-run" placeholder="RUN" maxlength="8" required>
 								</div>
 								<!-- RUN -->
 								<span class="txt9">
@@ -114,7 +114,7 @@
 								</span>
 
 								<div class="wrap-inputphone size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-functionary-phone" placeholder="Phone" required>
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-functionary-phone" placeholder="Phone" maxlength="18" required>
 								</div>
 								<!-- Date -->
 								<span class="txt9">
@@ -122,7 +122,7 @@
 								</span>
 
 								<div class="wrap-inputdate pos-relative txt10 size12 bo2 bo-rad-10 m-t-3 m-b-23">
-								<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-functionary-name" placeholder="Nombre" required>
+								<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-functionary-name" placeholder="Nombre" maxlength="80" required>
 								</div>
 				
 								<!-- Order -->
@@ -157,14 +157,14 @@
 								</span>
 
 								<div class="wrap-inputname size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-functionary-mail" placeholder="tuemail@email.algo" required>
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-functionary-mail" placeholder="Email" maxlength="300" required>
 								</div>								
 								
 								<span class="txt9">
 									 Apellido
 								</span>
 								<div class="wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-functionary-lastname" placeholder="apellido" required>
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-functionary-lastname" placeholder="apellido" maxlength="80" required>
 								</div>															
 							</div>
 							<div class="col">
