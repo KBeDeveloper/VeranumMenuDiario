@@ -48,8 +48,8 @@
                 "PEDIDO_FUNCIONARIO_RUN" => $inputs['functionary']['USUARIO_RUN'],
                 "PEDIDO_DESCRIPCION"     => $this->input->post('textarea-inputs-description')
             ];
-            /*$this->Order_model->create($order);
-            $order_info = $this->Order_model->read($order['PEDIDO_FUNCIONARIO_RUN']);            
+            $this->Order_model->create($order);
+            /*$order_info = $this->Order_model->read($order['PEDIDO_FUNCIONARIO_RUN']);            
             $ind = count($this->Order_model->read($order['PEDIDO_FUNCIONARIO_RUN']));
             $inputs['order_id'] = $order_info[$ind-1]['PEDIDO_ID'];*/
             header('Access-Control-Allow-Origin: http://127.0.0.1/');

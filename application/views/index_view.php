@@ -96,7 +96,7 @@
 
 						<div class="wrap-btn-slide1 animated visible-false" data-appear="rotateIn">
 							<!-- Button1 -->
-							<a href="menu.html" class="btn1 flex-c-m size1 txt3 trans-0-4">
+							<a href="<?=base_url();?>index.php/Menu_controller" class="btn1 flex-c-m size1 txt3 trans-0-4">
 								Ver Menu
 							</a>
 						</div>

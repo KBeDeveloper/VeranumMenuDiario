@@ -207,20 +207,21 @@
 										</tr>									
 									</thead>
 									<tbody>								
-									<?php foreach($inputsFromStock as $key=>$l){									
+									<?php foreach($inputsFromStock as $key=>$l){										
 										if($default==0){
-											//<!--Caso carga de insumos de una comida seleccionada-->																						
-											'<tr>
-												<td>'.$l[0]['STOCK_ID'].'</td>
-												<td>'.$l[0]['STOCK_NOMBRE'].'</td>
-												<td>'.$l[0]['STOCK_CANT_DISPONIBLE'].'</td>													
-											</tr>';	
-										}else{ echo								
+											echo
+												'<tr>
+													<td>'.$l[0]['STOCK_ID'].'</td>
+													<td>'.$l[0]['STOCK_NOMBRE'].'</td>
+													<td>'.$l[0]['STOCK_CANT_DISPONIBLE'].'</td>
+												</tr>';
+										}else{
+											echo											
 											'<tr>
 												<td>'.$l['STOCK_ID'].'</td>
 												<td>'.$l['STOCK_NOMBRE'].'</td>
 												<td>'.$l['STOCK_CANT_DISPONIBLE'].'</td>													
-											</tr>';											
+											</tr>';
 										}									
 									}?>
 									</tbody>
