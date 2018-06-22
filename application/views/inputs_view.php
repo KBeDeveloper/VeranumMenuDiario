@@ -168,6 +168,22 @@
 								</div>															
 							</div>
 						</div>
+						<div class="row">
+							<div class="col">
+								<table id="table-order-inputs">
+									<thead>
+										<tr>
+											<th>ID</th>
+											<th>NOMBRE</th>
+											<th>CANTIDAD SOLICITADA</th>		
+											<th>ACCION</th>
+										</tr>
+									</thead>
+									<tbody id="tbody-inputs">
+									</tbody>									
+								</table>
+							</div>
+						</div>
 						<!-- Button3 -->
 						<div class="row">
 						</div>
@@ -194,7 +210,7 @@
 									<?php foreach($inputsFromStock as $key=>$l){										
 										if($default==0){
 											echo
-											'<form id="form-stock-'.$l[0]['STOCK_ID'].'" method="get" action="#">
+											'<form id="form-stock-'.$l[0]['STOCK_ID'].'" method="get">
 												<tr>
 													<td>'.$l[0]['STOCK_ID'].'</td>
 													<td>'.$l[0]['STOCK_NOMBRE'].'</td>
@@ -206,14 +222,14 @@
 													</td>
 													<td>
 														<div class="col-md-4">
-															<button class="btn3 form-control size13 flex-c-m txt11 trans-0-4" type="submit">Agregar</button> 
+															<button class="btn3 form-control size13 flex-c-m txt11 trans-0-4" onClick="fillInputTable(\''.$l[0]['STOCK_ID'].'\',\''.$l[0]['STOCK_NOMBRE'].'\',\'hola\')">Agregar</button> 
 														</div>											
 													</td>
 												</tr>
 											</form>';
 										}else{
 											echo
-											'<form id="form-stock-'.$l['STOCK_ID'].'" method="get" action="#">
+											'<!--form id="form-stock-'.$l['STOCK_ID'].'" method="post" action="#"-->
 												<tr>
 													<td>'.$l['STOCK_ID'].'</td>
 													<td>'.$l['STOCK_NOMBRE'].'</td>
@@ -225,11 +241,11 @@
 													</td>
 													<td>
 														<div class="col-md-4">
-															<button class="btn3 form-control size13 flex-c-m txt11 trans-0-4" type="submit">Agregar</button> 
+															<button class="btn3 form-control size13 flex-c-m txt11 trans-0-4" onClick="fillInputTable(\''.$l['STOCK_ID'].'\',\''.$l['STOCK_NOMBRE'].'\',\'hola\')">Agregar</button> 
 														</div>											
 													</td>
 												</tr>
-											</form>';
+											<!--/form-->';
 										}									
 									}?>
 									</tbody>
@@ -248,11 +264,6 @@
 
 	<!-- Container Selection1 -->
 	<div id="dropDownSelect1"></div>
-
-    <script type="text/javascript">
-		$("").
-	</script>
-
 <!--===============================================================================================-->
 	<script type="text/javascript" src="<?= base_url();?>assets/vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
