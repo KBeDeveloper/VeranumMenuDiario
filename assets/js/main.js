@@ -193,11 +193,11 @@
 
 })(jQuery);
 
-function fillInputTable(id, name, quantity){
+/*function fillInputTable(id, name, quantity){
     $('#tbody-inputs').append(
         '<tr>',
             '<td>',id,'</td>',
             '<td>',name,'</td>',
             '<td>',quantity,'</td>',
         '</tr>');
-};
+};*/

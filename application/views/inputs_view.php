@@ -221,30 +221,30 @@
 													</td>
 													<td>
 														<div class="col-md-4">
-															<button class="btn3 form-control size13 flex-c-m txt11 trans-0-4" onClick="fillInputTable(\''.$l[0]['STOCK_ID'].'\',\''.$l[0]['STOCK_NOMBRE'].'\',document.getElementById("myNumber").val)">Agregar</button> 
+															<button class="btn3 form-control size13 flex-c-m txt11 trans-0-4" onClick="fillInputTable(\''.$l[0]['STOCK_ID'].'\',\''.$l[0]['STOCK_NOMBRE'].'\',\''.document.getElementById("myNumber").val.'\')">Agregar</button> 
 														</div>											
 													</td>
 												</tr>
 											</form>';
 										}else{
 											echo
-											'<!--form id="form-stock-'.$l['STOCK_ID'].'" method="post" action="#"-->
+											'<form id="form-stock-'.$l['STOCK_ID'].'" method="post" action="#">
 												<tr>
 													<td>'.$l['STOCK_ID'].'</td>
 													<td>'.$l['STOCK_NOMBRE'].'</td>
 													<td>'.$l['STOCK_CANT_DISPONIBLE'].'</td>
 													<td>
 														<div class="col-md-8">
-															<input class="form-control" style="background-color: rgba(64,64,64,0.2);" type="number" id="" name="input-quantity" min="1">
+															<input class="form-control" style="background-color: rgba(64,64,64,0.2);" type="number" value="1" name="input-quantity" min="1">
 														</div>
 													</td>
 													<td>
 														<div class="col-md-4">
-															<button class="btn3 form-control size13 flex-c-m txt11 trans-0-4" onClick="fillInputTable(\''.$l['STOCK_ID'].'\',\''.$l['STOCK_NOMBRE'].'\',\'.document.getElementById("input-quantity").val.\')">Agregar</button> 
+															<button type="submit" class="btn3 form-control size13 flex-c-m txt11 trans-0-4" onClick="fillInputTable(\''.$l['STOCK_ID'].'\',\''.$l['STOCK_NOMBRE'].'\',\'numericValue\')">Agregar</button> 
 														</div>											
 													</td>
 												</tr>
-											<!--/form-->';
+											</form>';
 										}									
 									}?>
 									</tbody>
