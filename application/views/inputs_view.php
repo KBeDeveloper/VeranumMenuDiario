@@ -171,8 +171,8 @@
 							<div class="col">
 								<?php								
 								if($functionary != null){
-									echo('<span class="txt9">'.
-									$functionary['USUARIO_NOMBRE'].'
+									echo('<span class="txt9"><h2>'.
+									$functionary['USUARIO_NOMBRE'].'</h2>
 								</span>');	
 								}
 								?>
@@ -302,8 +302,6 @@ $(document).ready( function () {
 	$('#table-order-inputs').DataTable();
 } );
 </script>
-<<<<<<< HEAD
-=======
 <script>
 function fillInputTable(id, name, quantity){
     $('#tbody-inputs').append(
@@ -315,7 +313,6 @@ function fillInputTable(id, name, quantity){
 		'</tr>');		
 };
 </script>
->>>>>>> 51a056b1fb8f1ec80a1edf9561e02dd30de033af
 <!--?=$insumoPedido['insumoPedido'] = [];
              array_push($insumoPedido['insumoPedido'],["INSUMO_PEDIDO_STOCK_ID" =>$this->input->post('input-id'),"INSUMO_PEDIDO_CANTIDAD" => $this->input->post('username')];  ?-->
 </body>
