@@ -220,7 +220,7 @@
 								</span>
 
 								<div class="wrap-inputphone size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-phone" placeholder="Phone" maxlength="18" required>
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="tel" name="input-phone" placeholder="Phone" maxlength="18" required>
 								</div>
 
 								<!-- Email -->
