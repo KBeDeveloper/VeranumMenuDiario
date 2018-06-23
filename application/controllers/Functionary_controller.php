@@ -59,15 +59,16 @@
 		    $this->load->view('inputs_view', $inputs);
         }        
         public function addInput($id){            
-            if(count($this->session->fun)>0){                
+            //if($this->input->post('input-order-id')){
                 $input_data = [
                     "INSUMO_PEDIDO_CANTIDAD"  => $this->input->post('input-quantity'),
                     "INSUMO_PEDIDO_STOCK_ID"  => $id,
                     "INSUMO_PEDIDO_PEDIDO_ID" => $this->input->post('input-order-id')
                 ];
-                $this->Order_model->createInput($input_data);
-            }
-            redirect('/Functionary_controller', 'refresh');
+                $this->Order_model->createInput($input_data);                
+            //}
+            echo var_dump($input_data);
+            //redirect('/Functionary_controller', 'refresh');
         }
     }
 ?>
