@@ -44,13 +44,14 @@
                 $this->User_model->create($inputs['functionary']);
             }            
             $order = [
-                "PEDIDO_ID"              => count($this->Order_model->getAll())+1,
-                "PEDIDO_FUNCIONARIO_RUN" => $inputs['functionary']['USUARIO_RUN']
+                "PEDIDO_ID"              => count($this->Order_model->getAll())+1,                
+                "PEDIDO_FUNCIONARIO_RUN" => $inputs['functionary']['USUARIO_RUN'],
+                "PEDIDO_DESCRIPCION"     => $this->input->post('textarea-inputs-description')
             ];
-            $this->Order_model->create($order);
+            /*$this->Order_model->create($order);
             $order_info = $this->Order_model->read($order['PEDIDO_FUNCIONARIO_RUN']);            
             $ind = count($this->Order_model->read($order['PEDIDO_FUNCIONARIO_RUN']));
-            $inputs['order_id'] = $order_info[$ind-1]['PEDIDO_ID'];
+            $inputs['order_id'] = $order_info[$ind-1]['PEDIDO_ID'];*/
             header('Access-Control-Allow-Origin: http://127.0.0.1/');
 		    header('Access-Control-Allow-Origin: htpp://localhost/');
             header('Access-Control-Allow-Credentials: true');
@@ -58,7 +59,7 @@
             $inputs['default'] = 1;
 		    $this->load->view('inputs_view', $inputs);
         }        
-        public function addInput($id){            
+        /*public function addInput($id){            
             //if($this->input->post('input-order-id')){
                 $input_data = [
                     "INSUMO_PEDIDO_CANTIDAD"  => $this->input->post('input-quantity'),
@@ -69,6 +70,6 @@
             //}
             echo var_dump($input_data);
             //redirect('/Functionary_controller', 'refresh');
-        }
+        }*/
     }
 ?>

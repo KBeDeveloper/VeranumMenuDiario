@@ -98,8 +98,8 @@
 					<?php if(count($functionary)!=0){?>
 						<div class="row" hidden>
 						<?php }else{ ?>
-							<div class="row">
-							<?php }?>
+						<div class="row">
+						<?php }?>
 							<div class="col-md-6">
 								<!-- Functionary Code -->
 								<span class="txt9">
@@ -131,16 +131,7 @@
 							</div>
 
 							<div class="col-md-6">
-								<!-- Name -->
-								<span class="txt9">
-									Correo electrónico
-								</span>
-
-								<div class="wrap-inputname size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-functionary-mail" placeholder="tuemail@email.algo" required>
-								</div>
-
-								<!-- DV  -->
+							    <!-- DV  -->
 								<span class="txt9">
 									DV
 								</span>
@@ -160,14 +151,27 @@
 										<option value="k">k</option>										
 									</select>
 								</div>
+
+								<span class="txt9">
+									Correo electrónico
+								</span>
+
+								<div class="wrap-inputname size12 bo2 bo-rad-10 m-t-3 m-b-23">
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-functionary-mail" placeholder="tuemail@email.algo" required>
+								</div>								
 								
-								<!-- Email -->
 								<span class="txt9">
 									 Apellido
 								</span>
 								<div class="wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23">
 									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-functionary-lastname" placeholder="apellido" required>
 								</div>															
+							</div>
+							<div class="col">
+								<span class="txt9">
+									Descripcion del pedido
+								</span>
+								<textarea class="form-control" rows="10" id="inputs-description" name="textarea-inputs-description"></textarea>
 							</div>
 						</div>
 						<div class="row">
@@ -178,32 +182,21 @@
 									</span>');
 								}
 								?>
-								<!--table id="table-order-inputs">
-									<thead>
-										<tr>
-											<th>ID</th>
-											<th>NOMBRE</th>
-											<th>CANTIDAD SOLICITADA</th>
-										</tr>
-									</thead>
-									<tbody id="tbody-inputs">
-									</tbody>									
-								</table-->
 							</div>
 						</div>
 						<!-- Button3 -->
-						<div class="row">
+						<div class="row" style="padding-top: 50px;">
 						</div>
 						<div class="wrap-btn-booking flex-c-m m-t-6">													
 							<?php if(count($functionary)==0){?>
 							<button type="submit" class="btn3 flex-c-m size13 txt11 trans-0-4">
 								Enviar Pedido
 							</button>
-						<?php } ?>
+							<?php } ?>
 						</div>
 					</form>
 				
-						<div class="row">						
+						<div class="row" style="padding-top: 50px;">						
 							<div class="col-md">
 								<table id="table-stock">
 									<thead>
@@ -211,53 +204,25 @@
 											<th>ID</th>
 											<th>Nombre</th>
 											<th>Cantidad Disponible</th>
-											<th>Cantidad a solicitar</th>
-											<th></th>
 										</tr>									
 									</thead>
 									<tbody>								
-									<?php foreach($inputsFromStock as $key=>$l){?>									
-										<?php if($default==0){?>
-											<!--Caso carga de insumos de una comida seleccionada-->											
-											<form id="form-stock-<?php echo $l[0]['STOCK_ID']?>" method="post" action="<?=base_url();?>index.php/Functionary_controller/addInput/<?=$l[0]['STOCK_ID']?>">
-												<tr>
-													<td><?php echo $l[0]['STOCK_ID']?></td>
-													<td><?php echo $l[0]['STOCK_NOMBRE']?></td>
-													<td><?php echo $l[0]['STOCK_CANT_DISPONIBLE']?></td>
-													<td>	
-													<input name="input-order-id" type="text" value="<?php echo $order_id?>" hidden>
-														<div class="col-md-8">
-															<input class="form-control" style="background-color: rgba(64,64,64,0.2);" type="number" id="" name="input-quantity" min="1">
-														</div>
-													</td>
-													<td>
-														<div class="col-md-4">
-															<button type="submit" class="btn3 form-control size13 flex-c-m txt11 trans-0-4">Agregar</button> 
-														</div>											
-													</td>
-												</tr>
-											</form>
-										<?php}else{?>											
-											<form id="form-stock-<?php echo $l['STOCK_ID']?>" method="POST" action="<?=base_url();?>'index.php/Functionary_controller/addInput/<?= $l['STOCK_ID']?>">
-												<tr>
-													<td><?php echo $l['STOCK_ID']?></td>
-													<td><?php echo $l['STOCK_NOMBRE']?></td>
-													<td><?php echo $l['STOCK_CANT_DISPONIBLE']?></td>
-													<td>
-													<input name="input-order-id" type="text" value="<?php echo $order_id?>" hidden>
-														<div class="col-md-8">
-															<input class="form-control" style="background-color: rgba(64,64,64,0.2);" type="number" value="1" name="input-quantity" min="1">
-														</div>
-													</td>
-													<td>
-														<div class="col-md-4">
-															<button type="submit" class="btn3 form-control size13 flex-c-m txt11 trans-0-4">Agregar</button> 
-														</div>											
-													</td>
-												</tr>
-											</form>
-										<?php}?>									
-									<?php}?>
+									<?php foreach($inputsFromStock as $key=>$l){									
+										if($default==0){
+											//<!--Caso carga de insumos de una comida seleccionada-->																						
+											'<tr>
+												<td>'.$l[0]['STOCK_ID'].'</td>
+												<td>'.$l[0]['STOCK_NOMBRE'].'</td>
+												<td>'.$l[0]['STOCK_CANT_DISPONIBLE'].'</td>													
+											</tr>';	
+										}else{ echo								
+											'<tr>
+												<td>'.$l['STOCK_ID'].'</td>
+												<td>'.$l['STOCK_NOMBRE'].'</td>
+												<td>'.$l['STOCK_CANT_DISPONIBLE'].'</td>													
+											</tr>';											
+										}									
+									}?>
 									</tbody>
 								</table>
 							</div>
