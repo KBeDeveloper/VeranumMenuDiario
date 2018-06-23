@@ -216,18 +216,16 @@
 										</tr>									
 									</thead>
 									<tbody>								
-									<?php foreach($inputsFromStock as $key=>$l){
-										require_once ('/application/controllers/Functionary_controller.php' );										
-										if($default==0){
-											//Caso carga de insumos de una comida seleccionada
-											echo
-											'<form id="form-stock-'.$l[0]['STOCK_ID'].'" method="post" action="'.base_url().'index.php/Functionary_controller/addInput/'.$l[0]['STOCK_ID'].'">
+									<?php foreach($inputsFromStock as $key=>$l){?>									
+										<?php if($default==0){?>
+											<!--Caso carga de insumos de una comida seleccionada-->											
+											<form id="form-stock-<?php echo $l[0]['STOCK_ID']?>" method="post" action="<?=base_url();?>index.php/Functionary_controller/addInput/<?=$l[0]['STOCK_ID']?>">
 												<tr>
-													<td>'.$l[0]['STOCK_ID'].'</td>
-													<td>'.$l[0]['STOCK_NOMBRE'].'</td>
-													<td>'.$l[0]['STOCK_CANT_DISPONIBLE'].'</td>
+													<td><?php echo $l[0]['STOCK_ID']?></td>
+													<td><?php echo $l[0]['STOCK_NOMBRE']?></td>
+													<td><?php echo $l[0]['STOCK_CANT_DISPONIBLE']?></td>
 													<td>	
-													<input name="input-order-id" type="text" value="'.$order_id.'" hidden>
+													<input name="input-order-id" type="text" value="<?php echo $order_id?>" hidden>
 														<div class="col-md-8">
 															<input class="form-control" style="background-color: rgba(64,64,64,0.2);" type="number" id="" name="input-quantity" min="1">
 														</div>
@@ -238,16 +236,15 @@
 														</div>											
 													</td>
 												</tr>
-											</form>';
-										}else{
-											echo
-											'<form id="form-stock-'.$l['STOCK_ID'].'" method="post" action="addInput('.$l['STOCK_ID'].')">
+											</form>
+										<?php}else{?>											
+											<form id="form-stock-<?php echo $l['STOCK_ID']?>" method="POST" action="<?=base_url();?>'index.php/Functionary_controller/addInput/<?= $l['STOCK_ID']?>">
 												<tr>
-													<td>'.$l['STOCK_ID'].'</td>
-													<td>'.$l['STOCK_NOMBRE'].'</td>
-													<td>'.$l['STOCK_CANT_DISPONIBLE'].'</td>
+													<td><?php echo $l['STOCK_ID']?></td>
+													<td><?php echo $l['STOCK_NOMBRE']?></td>
+													<td><?php echo $l['STOCK_CANT_DISPONIBLE']?></td>
 													<td>
-													<input name="input-order-id" type="text" value="'.$order_id.'" hidden>
+													<input name="input-order-id" type="text" value="<?php echo $order_id?>" hidden>
 														<div class="col-md-8">
 															<input class="form-control" style="background-color: rgba(64,64,64,0.2);" type="number" value="1" name="input-quantity" min="1">
 														</div>
@@ -258,9 +255,9 @@
 														</div>											
 													</td>
 												</tr>
-											</form>';
-										}									
-									}?>
+											</form>
+										<?php}?>									
+									<?php}?>
 									</tbody>
 								</table>
 							</div>
