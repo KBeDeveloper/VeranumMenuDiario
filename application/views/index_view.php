@@ -297,7 +297,7 @@
 									RUN
 								</span>
 								<div class="wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-run" placeholder="run">
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-run" placeholder="run" required>
 								</div>
 								<!-- Date -->
 								<span class="txt9">
@@ -305,7 +305,7 @@
 								</span>
 
 								<div class="wrap-inputdate pos-relative txt10 size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="my-calendar bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-date">
+									<input class="my-calendar bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-date" required>
 									<i class="btn-calendar fa fa-calendar ab-r-m hov-pointer m-r-18" aria-hidden="true"></i>
 								</div>
 
@@ -316,7 +316,7 @@
 
 								<div class="wrap-inputtime size12 bo2 bo-rad-10 m-t-3 m-b-23">
 									<!-- Select2 -->
-									<select class="selection-1" name="select-hour">
+									<select class="selection-1" name="select-hour" required>
 										<option value="9:00">9:00</option>
 										<option value="9:30">9:30</option>
 										<option value="10:00">10:00</option>
@@ -346,7 +346,7 @@
 
 								<div class="wrap-inputpeople size12 bo2 bo-rad-10 m-t-3 m-b-23">
 									<!-- Select2 -->
-									<select class="selection-1" name="select-commensals">
+									<select class="selection-1" name="select-commensals" required>
 										<option value="1">1 persona</option>
 										<option value="2">2  personas</option>
 										<option value="3">3  personas</option>
@@ -371,7 +371,7 @@
 								</span>
 								<div class="wrap-inputpeople size12 bo2 bo-rad-10 m-t-3 m-b-23">
 									<!-- Select3 -->
-									<select class="selection-1" name="select-dv">
+									<select class="selection-1" name="select-dv" required>
 										<option value="0">0</option>
 										<option selected value="1">1</option>
 										<option value="2">2</option>
@@ -391,7 +391,7 @@
 								</span>
 
 								<div class="wrap-inputname size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-name" placeholder="Nombre">
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-name" placeholder="Nombre" required>
 								</div>
 
 								<!-- Phone -->
@@ -400,7 +400,7 @@
 								</span>
 
 								<div class="wrap-inputphone size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-phone" placeholder="Phone">
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="input-phone" placeholder="Phone" required>
 								</div>
 
 								<!-- Email -->
@@ -408,7 +408,7 @@
 									Correo electrónico
 								</span>
 								<div class="wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="bo-rad-10 sizefull txt10 p-l-20" type="email" name="input-email" placeholder="Email">
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="email" name="input-email" placeholder="Email" required>
 								</div>
 															
 							</div>
